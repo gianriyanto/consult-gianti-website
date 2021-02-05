@@ -20,4 +20,10 @@ export default {
 
 <style lang="scss" scoped>
 
+  #Main{
+    display: flex;
+    flex-direction: column;
+
+  }
+
 </style>
