@@ -30,6 +30,7 @@ export default {
 <style scoped lang="scss">
 
 #ParticlesBackground{
+  display: none;
   z-index: 0;
   position: absolute;
   height: 100%;

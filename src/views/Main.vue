@@ -1,5 +1,6 @@
 <template>
   <div id="Main">
+    <TopNav/>
     <Landing/>
     <section>
 
@@ -12,9 +13,11 @@
 
 <script>
 import Landing from "@/components/Landing";
+import TopNav from "@/nav/TopNav";
+
 export default {
   name: "Main",
-  components: {Landing}
+  components: {TopNav, Landing}
 }
 </script>
 
