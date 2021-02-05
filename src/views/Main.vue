@@ -1,8 +1,6 @@
 <template>
   <div id="Main">
-    <section>
-
-    </section>
+    <Landing/>
     <section>
 
     </section>
@@ -13,8 +11,10 @@
 </template>
 
 <script>
+import Landing from "@/components/Landing";
 export default {
-  name: "Main"
+  name: "Main",
+  components: {Landing}
 }
 </script>
 
