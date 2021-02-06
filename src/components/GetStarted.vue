@@ -1,12 +1,20 @@
 <template>
   <section id="GetStarted">
+    <div class="content-wrapper">
+      <div class="header-container">
 
+      </div>
+      <div class="body">
+
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: "GetStarted"
+  name: "GetStarted",
+  components: {}
 }
 </script>
 

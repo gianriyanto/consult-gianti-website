@@ -22,7 +22,7 @@ export default {
 <style lang="scss">
 
 #app {
-  background-image: linear-gradient(to right top, white, white);
+  background-color: none;
 
   .app-wrapper{
 

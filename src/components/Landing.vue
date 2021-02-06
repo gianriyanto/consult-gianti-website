@@ -1,6 +1,7 @@
 <template>
   <section id="Landing">
     <particles-background/>
+    <blurry-background/>
     <TopBar/>
     <div class="content-wrapper">
       <div class="pre-header-container">
@@ -47,10 +48,12 @@ import ParticlesBackground from "@/background/ParticlesBackground";
 import TopBar from "@/components/TopBar";
 import Overview from "@/components/Overview";
 import SocialLinks from "@/components/SocialLinks";
+import BlurryBackground from "@/background/BlurryBackground";
 
 export default {
   name: "Landing",
   components: {
+    BlurryBackground,
     SocialLinks,
     Overview,
     TopBar,
@@ -79,7 +82,7 @@ export default {
     .content-wrapper{
       display: flex;
       flex-direction: column;
-      width: 78vw;
+      width: 73vw;
       height: 95vh;
       align-self: center;
       margin: auto;
@@ -87,7 +90,7 @@ export default {
       .pre-header-container{
         display: flex;
         flex-direction: row;
-        padding-top: 21%;
+        padding-top: 23%;
 
         .dash {
           width: 37px;
