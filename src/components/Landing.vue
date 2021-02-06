@@ -118,7 +118,7 @@ export default {
 
         .header-text {
           font-family: 'Bw Modelica Bold', serif;
-          font-size: 42px;
+          font-size: 45px;
           word-spacing: 1.5px;
           letter-spacing: -1.8px;
           line-height: 1.3;
@@ -135,7 +135,7 @@ export default {
 
         .subheader-text{
           font-family: "Bw Modelica Regular", serif;
-          font-size: 14px;
+          font-size: 16px;
           color: #1f1f1f;
           letter-spacing: -0.3px;
           line-height: 1.8;
