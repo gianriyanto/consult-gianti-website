@@ -1,22 +1,30 @@
 <template>
   <div id="Overview">
-    <div class="overview-container">
-      <div class="overview-item">
-        <span class="overview-number">
-          50
+    <div class="overview-item">
+      <span class="overview-number">
+        50
+      </span>
+      <span class="overview-description">
+        <span class="description-text">
+          Years
         </span>
-        <span class="overview-description">
-          Years of combined experience
+        <span class="description-text">
+          of combined experience
         </span>
-      </div>
-      <div class="overview-item">
-        <span class="overview-number">
-          90
+      </span>
+    </div>
+    <div class="overview-item">
+      <span class="overview-number">
+        90
+      </span>
+      <span class="overview-description">
+        <span class="description-text">
+          Universities
         </span>
-        <span class="overview-description">
-          Universities I have enrolled to
+        <span class="description-text">
+          that clients enrolled
         </span>
-      </div>
+      </span>
     </div>
   </div>
 </template>
@@ -29,7 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 
-.overview-container {
+#Overview {
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -39,7 +47,7 @@ export default {
     padding-top: 10px;
     display: flex;
     flex-direction: row;
-    width: 230px;
+    width: fit-content;
     align-items: center;
 
     .overview-number{
@@ -52,13 +60,18 @@ export default {
     }
 
     .overview-description{
-      font-family: 'Gilroy Regular', serif;
-      font-size: 15px;
-      word-spacing: 1.5px;
-      letter-spacing: -0.5px;
-      line-height: 1.3;
+      display: flex;
+      flex-direction: column;
       padding-bottom: 10px;
-      color: #282828;
+
+      .description-text{
+        font-family: 'Gilroy Regular', serif;
+        font-size: 15px;
+        word-spacing: 1.5px;
+        letter-spacing: -0.5px;
+        line-height: 1.3;
+        color: #282828;
+      }
     }
   }
 }

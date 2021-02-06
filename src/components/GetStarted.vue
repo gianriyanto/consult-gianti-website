@@ -1,7 +1,7 @@
 <template>
   <section id="GetStarted">
     <div class="content-wrapper">
-      <div class="header-container">
+      <div class="header-wrapper">
 
       </div>
       <div class="body">

@@ -47,8 +47,8 @@ export default {
       position: absolute;
       transform: translate(55vw, 100px);
       background-color: #5657ff;
-      height: 500px;
-      width: 500px;
+      height: 450px;
+      width: 450px;
       border-radius: 50%;
     }
     .circle-2{

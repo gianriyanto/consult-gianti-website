@@ -37,7 +37,7 @@ export default {
 #SocialLinks{
   display: flex;
   flex-direction: row;
-  height: 70px;
+  height: 100px;
   align-items: center;
 
   .link-container{
