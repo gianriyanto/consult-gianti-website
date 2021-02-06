@@ -9,7 +9,7 @@
       -->
       <button class="contact-button">
         <span class="button-label">
-          Get in Touch
+          Get in touch
         </span>
       </button>
     </div>
@@ -40,8 +40,8 @@ export default {
       width: 90vw;
 
       .logo {
-        width: 25px;
-        height: 50px;
+        width: 23px;
+        height: 47px;
         background-color: #1f1f1f;
         border-bottom-left-radius: 25px;
         border-top-left-radius: 25px;
@@ -71,9 +71,9 @@ export default {
   */
       .contact-button {
         align-self: center;
-        width: 130px;
-        height: 46px;
-        border: thin solid #5471f1;
+        width: 120px;
+        height: 43px;
+        border: thin solid #1f1f1f;
         background: rgba(255, 255, 255, 0.04);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
         backdrop-filter: blur( 3px );
@@ -86,7 +86,7 @@ export default {
           letter-spacing: -0.5px;
           font-size: 13px;
           margin: auto;
-          color: #5471f1;
+          color: #1f1f1f;
         }
         &:hover{
           opacity: 0.7;
