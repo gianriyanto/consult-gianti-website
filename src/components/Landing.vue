@@ -17,28 +17,26 @@
           Your education counselor.
         </span>
       </div>
-      <div class="sub-header-container">
-        <span class="sub-header-text">
-          Nice to meet you,
+      <div class="subheader-container">
+        <span class="subheader-text">
+          I founded Aspectama to help architect personalised education blueprints for aspiring professionals like you.
         </span>
       </div>
+      <div class="button-container">
+        <button class="get-started-button">
+          <span class="button-label">
+            Let's get started
+          </span>
+        </button>
+        <button class="learn-more-button">
+          <span class="button-label">
+            Learn more
+          </span>
+        </button>
+      </div>
       <div class="body-container">
-        <div class="overview">
-          <span class="overview-number">
-            50
-          </span>
-          <span class="overview-description">
-            Years of combined experience
-          </span>
-        </div>
-        <div class="overview">
-          <span class="overview-number">
-            90
-          </span>
-          <span class="overview-description">
-            Universities I have enrolled to
-          </span>
-        </div>
+        <SocialLinks id="SocialLinks"/>
+        <Overview id="Overview"/>
       </div>
     </div>
   </section>
@@ -47,10 +45,22 @@
 <script>
 import ParticlesBackground from "@/background/ParticlesBackground";
 import TopBar from "@/components/TopBar";
+import Overview from "@/components/Overview";
+import SocialLinks from "@/components/SocialLinks";
 
 export default {
   name: "Landing",
-  components: { TopBar, ParticlesBackground}
+  components: {
+    SocialLinks,
+    Overview,
+    TopBar,
+    ParticlesBackground
+  },
+  data() {
+    return {
+
+    }
+  }
 }
 </script>
 
@@ -59,25 +69,28 @@ export default {
 @media only screen and (min-width: 769px) {
 
   #Landing{
+    height: 100vh;
+    width: 100vw;
 
     #TopBar{
-
+      display: none;
     }
 
     .content-wrapper{
       display: flex;
       flex-direction: column;
-      width: 70vw;
+      width: 78vw;
+      height: 95vh;
       align-self: center;
-      margin: 0 auto;
+      margin: auto;
 
       .pre-header-container{
         display: flex;
         flex-direction: row;
-        padding-top: 140px;
+        padding-top: 21%;
 
         .dash {
-          width: 40px;
+          width: 37px;
           height: 2px;
           background-color: #5651ec;
           border: none;
@@ -86,7 +99,7 @@ export default {
 
         .pre-header-text{
           font-family: 'Bw Modelica Medium', serif;
-          font-size: 21px;
+          font-size: 19px;
           word-spacing: 1.5px;
           letter-spacing: -0.5px;
           line-height: 1.2;
@@ -109,54 +122,71 @@ export default {
           color: #282828;
         }
       }
-      .sub-header-container{
+
+      .subheader-container{
+        width: 35%;
+        padding-top: 10px;
         display: flex;
         flex-direction: column;
         text-align: left;
 
-        .sub-header-text{
-          font-family: 'Bw Modelica Bold', serif;
-          font-size: 42px;
-          word-spacing: 1.5px;
-          letter-spacing: -1.8px;
-          line-height: 1.3;
-          color: #282828;
+        .subheader-text{
+          font-family: "Bw Modelica Regular", serif;
+          font-size: 14px;
+          color: #1f1f1f;
+          letter-spacing: -0.3px;
+          line-height: 1.8;
         }
       }
 
-      .body-container {
-        padding-top: 100px;
+      .button-container{
+        padding-top: 20px;
         display: flex;
-        flex-direction: column;
-        margin-left: auto;
+        flex-direction: row;
+        text-align: left;
 
-        .overview{
-          display: flex;
-          flex-direction: row;
-          width: 230px;
-          align-items: center;
+        .get-started-button{
+          cursor: pointer;
+          width: 150px;
+          height: 44px;
+          background-color: #1f1f1f;
+          border-radius: 30px;
+          margin-right: 25px;
 
-          .overview-number{
-            font-family: 'Gilroy Bold', serif;
-            font-size: 60px;
-            word-spacing: 1.5px;
-            letter-spacing: -0.5px;
-            color: #282828;
-            margin-right: 20px;
+          .button-label {
+            font-family: "Gilroy Regular", serif;
+            font-size: 13px;
+            margin: auto;
+            color: white;
           }
+        }
+        .learn-more-button{
+          cursor: pointer;
+          width: fit-content;
+          background: transparent;
+          border-radius: 10px;
 
-          .overview-description{
-            font-family: 'Gilroy Regular', serif;
-            font-size: 15px;
-            word-spacing: 1.5px;
-            letter-spacing: -0.5px;
-            line-height: 1.3;
-            padding-bottom: 10px;
-            color: #282828;
+          .button-label {
+            font-family: "Gilroy Regular", serif;
+            font-size: 14px;
+            margin: auto;
+            color: #1f1f1f;
           }
         }
       }
+      .body-container{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
 
+        #SocialLinks {
+          margin-top: auto;
+        }
+        #Overview{
+          margin-top: auto;
+          margin-left: auto;
+        }
+      }
     }
   }
 
