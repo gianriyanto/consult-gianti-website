@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Landing from "@/components/Landing";
+import Landing from "@/sections/Landing";
 import TopNav from "@/nav/TopNav";
-import GetStarted from "@/components/GetStarted";
+import GetStarted from "@/sections/GetStarted";
 
 export default {
   name: "Main",
