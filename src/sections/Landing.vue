@@ -6,7 +6,6 @@
     <div class="content-wrapper">
       <div class="header-wrapper">
         <landing-header id="LandingHeader"/>
-        <img class="landing-image" src="@/assets/images/graduation.svg" alt=""/>
       </div>
       <div class="footer-container">
         <SocialLinks id="SocialLinks"/>
@@ -72,11 +71,6 @@ export default {
 
         #LandingHeader{
           width: 55%;
-        }
-
-        .landing-image{
-          display: none;
-          width: 40%;
         }
       }
 
