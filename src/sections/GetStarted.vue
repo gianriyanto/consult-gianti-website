@@ -1,6 +1,5 @@
 <template>
   <section id="GetStarted">
-    <blurry-background2/>
     <div class="content-wrapper">
       <div class="header-container">
         <span class="header-text">
@@ -13,12 +12,11 @@
 </template>
 
 <script>
-import BlurryBackground2 from "@/background/BlurryBackground2";
 import Typeform from "@/components/Typeform";
 
 export default {
   name: "GetStarted",
-  components: {Typeform, BlurryBackground2}
+  components: {Typeform}
 }
 </script>
 
@@ -38,7 +36,7 @@ export default {
       .header-container {
         align-self: center;
         width: 60%;
-        padding-top: 100px;
+        padding-top: 20px;
         text-align: center;
 
         .header-text {

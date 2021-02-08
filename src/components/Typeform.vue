@@ -95,18 +95,22 @@ export default {
 
   .left{
     margin-right: auto;
-    border: 1px solid rgba(109, 107, 107, 0.4);
+    border: 1px solid #b5b5b5;
     background: rgba( 255, 255, 255, 0.15 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
     backdrop-filter: blur( 20.0px );
     -webkit-backdrop-filter: blur( 20.0px );
-    padding: 0 50px 0 20px;
+    padding: 0 20px 0 20px;
   }
 
   .right{
     margin-left: auto;
-    background-image: linear-gradient(to top right, #343434, #292929);
-    padding: 0 20px 0 50px;
+    border: 1px solid #acbaff;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    padding: 0 20px 0 20px;
   }
 
   .input-card{
@@ -114,15 +118,15 @@ export default {
     flex-direction: column;
     justify-content: center;
     width: fit-content;
-    height: 57px;
+    height: 50px;
     border-radius: 9px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 
     .me {
       font-family: 'Gilroy Regular', serif;
       font-size: 10px;
       margin-bottom: 4px;
-      color: #5873f5;
+      color: #282828;
     }
 
     .user {
@@ -130,7 +134,7 @@ export default {
       font-size: 10px;
       margin-bottom: 4px;
       margin-left: auto;
-      color: white;
+      color: #758cff;
     }
 
 
@@ -138,7 +142,7 @@ export default {
       font-family: 'Bw Modelica Medium', serif;
       font-size: 12px;
       word-spacing: 1.5px;
-      letter-spacing: -1px;
+      letter-spacing: -0.7px;
       color: #282828;
     }
 
@@ -146,12 +150,12 @@ export default {
       font-family: 'Bw Modelica Medium', serif;
       font-size: 12px;
       word-spacing: 1.5px;
-      letter-spacing: -0.5px;
-      color: white;
+      letter-spacing: -0.7px;
+      color: #a5a5a5;
     }
   }
   .submit-button{
-    display: flex;
+    display: none;
     cursor: pointer;
     width: 100px;
     background-color: #2b2b2b;
