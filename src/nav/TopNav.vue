@@ -71,22 +71,19 @@ export default {
   */
       .contact-button {
         align-self: center;
-        width: 120px;
-        height: 43px;
+        width: 130px;
+        height: 41px;
         border: thin solid #1f1f1f;
-        background: rgba(255, 255, 255, 0.04);
+        background-image: linear-gradient(to left, #1f1f1f, #262626);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
-        backdrop-filter: blur( 3px );
-        -webkit-backdrop-filter: blur( 3px );
-        border-radius: 10px;
+        border-radius: 30px;
         transition: all .35s ease-in-out;
 
         .button-label{
           font-family: "Bw Modelica Medium", serif;
-          letter-spacing: -0.5px;
-          font-size: 13px;
+          font-size: 12px;
           margin: auto;
-          color: #1f1f1f;
+          color: white;
         }
         &:hover{
           opacity: 0.7;
