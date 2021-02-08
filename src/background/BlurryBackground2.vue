@@ -30,40 +30,40 @@ export default {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: rgba( 255, 255, 255, 0.6 );
-    backdrop-filter: blur( 70.0px );
-    -webkit-backdrop-filter: blur( 70.0px );
+    background: rgba( 255, 255, 255, 0.75 );
+    backdrop-filter: blur( 80.0px );
+    -webkit-backdrop-filter: blur( 80.0px );
     border-radius: 10px;
   }
 
   .circle-1{
-    z-index: 0;
+    z-index: -1;
     display: flex;
     position: absolute;
-    transform: translate(55vw, 100px);
-    background-color: #5657f8;
-    height: 450px;
-    width: 450px;
+    transform: translate(2vw, 10vh);
+    background-color: #7a7bf8;
+    height: 50vw;
+    width: 50vw;
     border-radius: 50%;
   }
   .circle-2{
-    z-index: -1;
+    z-index: 0;
     display: flex;
     position: absolute;
-    transform: translate(40vw, 10vh);
+    transform: translate(50vw, 20vh);
     background-color: #46cbcb;
-    height: 350px;
-    width: 350px;
+    height: 10vw;
+    width: 10vw;
     border-radius: 50%;
   }
   .circle-3{
-    z-index: -1;
-    display: none;
+    z-index: 0;
+    display: flex;
     position: absolute;
-    transform: translate(40vw, 50vh);
-    background-color: #db83f3;
-    height: 400px;
-    width: 400px;
+    transform: translate(40vw, 30vh);
+    background-color: #46cbcb;
+    height: 30vw;
+    width: 30vh;
     border-radius: 50%;
   }
 }

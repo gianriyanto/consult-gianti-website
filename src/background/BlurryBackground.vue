@@ -45,8 +45,8 @@ export default {
       z-index: 0;
       display: flex;
       position: absolute;
-      transform: translate(55vw, 100px);
-      background-color: #5657ff;
+      transform: translate(55vw, 70px);
+      background-color: #9589fd;
       height: 450px;
       width: 450px;
       border-radius: 50%;
