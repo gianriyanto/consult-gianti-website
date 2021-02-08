@@ -1,6 +1,5 @@
 <template>
   <section id="Landing">
-    <particles-background/>
     <blurry-background/>
     <TopBar/>
     <div class="content-wrapper">
@@ -16,7 +15,6 @@
 </template>
 
 <script>
-import ParticlesBackground from "@/background/ParticlesBackground";
 import TopBar from "@/components/TopBar";
 import Overview from "@/components/Overview";
 import SocialLinks from "@/components/SocialLinks";
@@ -31,7 +29,6 @@ export default {
     SocialLinks,
     Overview,
     TopBar,
-    ParticlesBackground
   },
   data() {
     return {

@@ -129,10 +129,12 @@ export default {
       cursor: pointer;
       width: fit-content;
       padding: 0 23px;
-      background-color: transparent;
       border: thin solid black;
       border-radius: 30px;
       margin-right: 25px;
+      background: rgba( 255, 255, 255, 0.2 );
+      backdrop-filter: blur( 70.0px );
+      -webkit-backdrop-filter: blur( 70.0px );
 
       .whatsapp-icon {
         align-self: center;
