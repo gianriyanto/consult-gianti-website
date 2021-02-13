@@ -22,7 +22,7 @@ export default {
 <style lang="scss">
 
 #app {
-  background-color: none;
+  background-color: transparent;
 
   .app-wrapper{
 

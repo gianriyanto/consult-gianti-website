@@ -1,5 +1,6 @@
 <template>
   <section id="GetStarted">
+    <div class="placeholder-get-started"> </div>
     <div class="content-wrapper">
       <div class="header-container">
         <span class="header-text">
@@ -25,10 +26,17 @@ export default {
 @media only screen and (min-width: 769px) {
 
   #GetStarted{
-    height: 100vh;
+    height: fit-content;
+    margin-top: 100px;
+
+    .placeholder-get-started{
+      background-image: linear-gradient(to top right, #1f1f1f, #343434);
+      height: 85vh;
+      width: 100vw;
+    }
 
     .content-wrapper {
-      display: flex;
+      display: none;
       flex-direction: column;
       margin: 0 auto;
       width: 39vw;

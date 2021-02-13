@@ -3,6 +3,7 @@
     <TopNav/>
     <Landing/>
     <GetStarted/>
+    <About/>
   </div>
 </template>
 
@@ -10,16 +11,22 @@
 import Landing from "@/sections/Landing";
 import TopNav from "@/nav/TopNav";
 import GetStarted from "@/sections/GetStarted";
+import About from "@/sections/About";
 
 export default {
   name: "Main",
-  components: {GetStarted, TopNav, Landing}
+  components: {
+    About,
+    GetStarted,
+    TopNav,
+    Landing
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 
-  #Main{
+  #Main {
     display: flex;
     flex-direction: column;
 
