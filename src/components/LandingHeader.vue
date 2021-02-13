@@ -14,21 +14,22 @@
         Your education counselor.
       </span>
     </div>
-    <div class="subheader-container">
+    <div class="subheader-container"
+         v-observe-visibility="animateElement">
       <span class="subheader-text">
         I founded Aspectama to help architect personalised education blueprints for aspiring professionals like you.
       </span>
     </div>
     <div class="button-container">
-      <button class="get-started-button">
-        <span class="button-label">
-          Let's get started
-        </span>
-      </button>
-      <button class="contact-button">
+      <button :class="buttonStyle">
         <font-awesome-icon class="whatsapp-icon" :icon="['fab', 'whatsapp']" />
         <span class="button-label">
           Say hi!
+        </span>
+      </button>
+      <button class="get-started-button">
+        <span class="button-label">
+          Let's get started
         </span>
       </button>
     </div>
@@ -37,7 +38,22 @@
 
 <script>
 export default {
-  name: "LandingHeader"
+  name: "LandingHeader",
+  data(){
+    return {
+      buttonStyle: 'normal-button'
+    }
+  },
+  methods: {
+    animateElement(isVisible) {
+      if(!isVisible){
+        // trigger animation for the element
+        this.buttonStyle = 'floating-button';
+      } else {
+        this.buttonStyle = 'normal-button';
+      }
+    }
+  }
 }
 </script>
 
@@ -106,40 +122,28 @@ export default {
     display: flex;
     flex-direction: row;
     text-align: left;
-    height: 40px;
+    height: 43px;
 
-    .get-started-button {
-      cursor: pointer;
-      width: 150px;
-      background-color: #1f1f1f;
-      border-radius: 30px;
-      margin-right: 15px;
-
-      .button-label {
-        font-family: "Gilroy Regular", serif;
-        font-size: 13px;
-        margin: auto;
-        color: white;
-      }
-    }
-    .contact-button {
+    .normal-button {
+      z-index: 2;
+      position: sticky;
+      transition: all 1.2s ease-in-out;
       display: flex;
       flex-direction: row;
       align-items: center;
-      cursor: pointer;
-      width: fit-content;
+      justify-content: center;
       padding: 0 23px;
+      background-color: #2b2b2b;
       border: thin solid black;
       border-radius: 30px;
-      margin-right: 25px;
-      background: rgba( 255, 255, 255, 0.2 );
-      backdrop-filter: blur( 70.0px );
-      -webkit-backdrop-filter: blur( 70.0px );
+      width: 130px;
+      margin-right: 15px;
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
 
       .whatsapp-icon {
         align-self: center;
         font-size: 19px;
-        color: black;
+        color: white;
         margin-right: 7px;
       }
 
@@ -147,6 +151,50 @@ export default {
         font-family: "Gilroy SemiBold", serif;
         font-size: 14px;
         padding-top: 3px;
+        color: white;
+      }
+    }
+    .floating-button{
+      z-index: 2;
+      position: fixed;
+      cursor: pointer;
+      top: 0;
+      transform: translate(75vw, 87vh);
+      background-color: #242424;
+      border-radius: 50%;
+      width: 65px;
+      height: 65px;
+      transition: all 1.2s ease-in-out;
+      box-shadow: 0 8px 32px 0 rgba(99, 100, 114, 0.4);
+
+      .whatsapp-icon{
+        margin: auto;
+        color: white;
+        font-size: 30px;
+      }
+
+      .button-label {
+        display: none;
+      }
+
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+
+    .get-started-button {
+      width: 150px;
+      border: thin solid black;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur( 20.0px );
+      -webkit-backdrop-filter: blur( 20.0px );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+      border-radius: 30px;
+
+      .button-label {
+        font-family: "Gilroy SemiBold", serif;
+        font-size: 14px;
+        margin: auto;
         color: black;
       }
     }

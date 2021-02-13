@@ -30,7 +30,7 @@ export default {
     margin-top: 100px;
 
     .placeholder-get-started{
-      background-image: linear-gradient(to top right, #1f1f1f, #343434);
+      background-image: linear-gradient(to right top, #232323, #272727, #2a2a2a, #2e2e2e, #323232, #353535, #383838, #3b3b3b, #3e3e3e, #404040, #434343, #464646);
       height: 90vh;
       width: 100vw;
     }
