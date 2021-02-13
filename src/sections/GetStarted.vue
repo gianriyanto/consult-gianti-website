@@ -31,7 +31,7 @@ export default {
 
     .placeholder-get-started{
       background-image: linear-gradient(to top right, #1f1f1f, #343434);
-      height: 85vh;
+      height: 90vh;
       width: 100vw;
     }
 

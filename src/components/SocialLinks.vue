@@ -47,6 +47,12 @@ export default {
     height: 35px;
     margin-right: 10px;
     display: flex;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+      opacity: 0.7;
+    }
 
     .icon{
       margin: auto;

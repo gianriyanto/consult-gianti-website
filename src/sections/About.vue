@@ -2,33 +2,33 @@
   <section id="About">
     <div class="content-wrapper">
       <div class="row-a">
-        <span class="card-0">
+        <span class="card-0 horizontal">
 
         </span>
       </div>
       <div class="row-b">
-        <span class="card-1">
+        <span class="card-1 vertical">
 
         </span>
-        <span class="card-2">
+        <span class="card-2 vertical">
 
         </span>
       </div>
       <div class="row-c">
-        <span class="card-3">
+        <span class="card-3 horizontal">
 
         </span>
       </div>
       <div class="row-d">
-        <span class="card-4">
+        <span class="card-4 vertical">
 
         </span>
-        <span class="card-5">
+        <span class="card-5 vertical">
 
         </span>
       </div>
       <div class="row-e">
-        <span class="card-6">
+        <span class="card-6 horizontal">
 
         </span>
       </div>
@@ -53,8 +53,22 @@ export default {
     display: flex;
     flex-direction: column;
     height: fit-content;
+    max-width: 850px;
     width: 55vw;
     margin: 0 auto;
+
+    .horizontal{
+      width: 100%;
+      height: 70vh;
+      max-height: 500px;
+      border-radius: 25px;
+    }
+    .vertical{
+      width: 49%;
+      height: 70vh;
+      max-height: 700px;
+      border-radius: 25px;
+    }
 
     .row-a {
       display: flex;
@@ -63,10 +77,7 @@ export default {
       margin: 20px 0;
 
       .card-0{
-        width: 100%;
-        height: 500px;
         background-color: #ffffff;
-        border-radius: 25px;
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.15);
       }
     }
@@ -80,17 +91,11 @@ export default {
       border-radius: 30px;
 
       .card-1{
-        width: 49%;
-        height: 550px;
         background-color: #ffffff;
-        border-radius: 25px;
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
       }
       .card-2{
-        width: 49%;
-        height: 550px;
         background-color: #ffffff;
-        border-radius: 25px;
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
       }
     }
@@ -101,11 +106,8 @@ export default {
       margin: 20px 0;
 
       .card-3{
-        width: 100%;
-        height: 500px;
         background-color: #ffffff;
-        border-radius: 25px;
-        box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
+        box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.15);
       }
     }
     .row-d {
@@ -117,17 +119,11 @@ export default {
       border-radius: 30px;
 
       .card-4{
-        width: 49%;
-        height: 570px;
         background-color: #ffffff;
-        border-radius: 25px;
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
       }
       .card-5{
-        width: 49%;
-        height: 570px;
         background-color: #ffffff;
-        border-radius: 25px;
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
       }
     }
@@ -138,11 +134,8 @@ export default {
       margin: 20px 0;
 
       .card-6{
-        width: 100%;
-        height: 450px;
         background-color: #ffffff;
-        border-radius: 25px;
-        box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
+        box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.15);
       }
     }
   }
