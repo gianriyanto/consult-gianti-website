@@ -2,8 +2,8 @@
   <div id="Main">
     <TopNav/>
     <Landing/>
-    <GetStarted/>
     <About/>
+    <GetStarted/>
   </div>
 </template>
 
