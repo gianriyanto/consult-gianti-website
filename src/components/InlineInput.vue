@@ -11,22 +11,17 @@
     <div v-else class="input-card">
       <div :class="applyInputStyle(field.input)">
         <label @click="onEditText"> {{field.input}} </label>
-        <transition appear name="fade">
-          <check-circle-icon v-if="field.isValid" size="1x" class="check-icon"/>
-        </transition>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { CheckCircleIcon } from 'vue-feather-icons'
 
 export default {
   field: "InlineInput",
   props: ['inputData'],
   components: {
-    CheckCircleIcon,
   },
   data() {
     return {
@@ -66,33 +61,31 @@ export default {
 <style lang="scss" scoped>
 
 #InlineInput{
-  font-family: "Bw Modelica Regular", serif;
-  font-size: 14px;
+  font-family: "Bw Modelica Medium", serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 19px;
+  width: 250px;
+  min-width: fit-content;
 
   .input-editing{
-    font-family: "Bw Modelica Regular", serif;
-    font-size: 14px;
+    text-align: center;
+    font-family: "Bw Modelica Medium", serif;
+    font-size: 19px;
     color: #5f5f5f;
-    width: 98%;
+    width: 100%;
     border: transparent;
     outline: transparent;
     background-color: transparent;
-    border-bottom: thin solid #a3cfc4;
   }
 
   .input-card{
     display: flex;
     flex-direction: row;
   }
-  .check-icon{
-    padding-left: 3px;
-    transform: translateY(2px);
-    font-size: 14px;
-    color: #16a075;
-    flex-grow: 1;
-  }
   .input-has-value-style{
-    color: #458fcf;
+    color: #61b0e5;
   }
   .input-no-value-style{
     color: #b2b3b7;

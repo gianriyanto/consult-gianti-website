@@ -93,10 +93,10 @@ export default {
 
     .header-text {
       font-family: 'Bw Modelica Bold', serif;
-      font-size: 45px;
-      word-spacing: 1.5px;
-      letter-spacing: -1.8px;
-      line-height: 1.3;
+      font-size: 50px;
+      word-spacing: 1.3px;
+      letter-spacing: -0.7px;
+      line-height: 1.2;
       color: #282828;
     }
   }

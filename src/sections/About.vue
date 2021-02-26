@@ -66,6 +66,7 @@ export default {
 <style lang="scss" scoped>
 
 #About{
+  display: none;
   height: fit-content;
   margin-top: 100px;
 

@@ -1,88 +1,65 @@
 <template>
   <div id="Typeform">
-    <span class="left input-card">
-      <span class="me">
-        Gianti Atmojo
-      </span>
-      <span class="prompt-text">
-        Hi, let's start with your name.
-      </span>
-    </span>
-    <span class="right input-card">
-      <span class="user">
-        You
-      </span>
-      <span class="input-text">
-        What's your name?
-      </span>
-    </span>
-    <span class="left input-card">
-      <span class="me">
-        Gianti Atmojo
-      </span>
-      <span class="prompt-text">
-        What are you planning to study?
-      </span>
-    </span>
-    <span class="right input-card">
-      <span class="user">
-        You
-      </span>
-      <span class="input-text">
-        Interested major or course
-      </span>
-    </span>
-    <span class="left input-card">
-      <span class="me">
-        Gianti Atmojo
-      </span>
-      <span class="prompt-text">
-        Where would you like to travel to study?
-      </span>
-    </span>
-    <span class="right input-card">
-      <span class="user">
-        You
-      </span>
-      <span class="input-text">
-        Preferred city or country
-      </span>
-    </span>
-    <span class="left input-card">
-      <span class="me">
-        Gianti Atmojo
-      </span>
-      <span class="prompt-text">
-        Cool! It's best to contact you at?
-      </span>
-    </span>
-    <span class="right input-card">
-      <span class="user">
-        You
-      </span>
-      <span class="input-text">
-        What's your mobile or email to contact?
-      </span>
-    </span>
-    <span class="submit-button">
-      <span class="button-label">
-        Submit
-      </span>
-    </span>
-    <span class="left input-card">
-      <span class="me">
-        Gianti Atmojo
-      </span>
-      <span class="prompt-text">
-        Thanks! Talk soon Gian.
-      </span>
-    </span>
+    <div class="content-wrapper">
+      <div class="form_line font-style">
+        <span class="font-style">
+          Hey, my name is
+        </span>
+        <inline-input class="padding" v-bind:inputData="name"/>
+        <span class="font-style">
+          and I'm looking for an
+        </span>
+        <inline-input class="padding" v-bind:inputData="programs"/>
+      </div>
+      <div class="form_line font-style">
+        <span class="font-style">
+          I'm interested in studying
+        </span>
+        <inline-input class="padding" v-bind:inputData="course"/>
+        <span class="font-style">
+          in
+        </span>
+        <inline-input class="padding" v-bind:inputData="country"/>
+      </div>
+      <div class="form_line font-style">
+        <span class="font-style">
+          Get in touch with me at
+        </span>
+        <inline-input class="padding" v-bind:inputData="contact"/>
+      </div>
+      <div class="button-container">
+        <button class="submit-button">
+          <span class="button-label">
+            Send Enquiry
+          </span>
+          <send-icon size="1.2x" class="send-icon"></send-icon>
+        </button>
+        <button class="clear-button">
+          <span class="button-label">
+            Clear
+          </span>
+        </button>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import InlineInput from "@/components/InlineInput";
+import { SendIcon } from 'vue-feather-icons'
+
 export default {
-  name: "Typeform"
+  name: "Typeform",
+  components: {InlineInput, SendIcon},
+  data() {
+    return {
+      name: {prompt: 'your name', input: 'your name', edit: false, isValid: false},
+      programs: {prompt: 'interested education program', input: 'interested education program', edit: false, isValid: false},
+      course: {prompt: 'major or course', input: 'major or course', edit: false, isValid: false},
+      country: {prompt: 'preferred city or country?', input: 'preferred city or country?', edit: false, isValid: false},
+      contact: {prompt: "phone or email", input: "phone or email", edit: false, isValid: false},
+    }
+  }
 }
 </script>
 
@@ -93,81 +70,73 @@ export default {
   flex-direction: column;
   padding-top: 50px;
 
-  .left{
-    margin-right: auto;
-    border: 1px solid #b5b5b5;
-    background: rgba( 255, 255, 255, 0.15 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
-    backdrop-filter: blur( 20.0px );
-    -webkit-backdrop-filter: blur( 20.0px );
-    padding: 0 20px 0 20px;
-  }
-
-  .right{
-    margin-left: auto;
-    border: 1px solid #acbaff;
-    background: rgba( 255, 255, 255, 0.15 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
-    backdrop-filter: blur( 20.0px );
-    -webkit-backdrop-filter: blur( 20.0px );
-    padding: 0 20px 0 20px;
-  }
-
-  .input-card{
+  .content-wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: fit-content;
-    height: 50px;
-    border-radius: 9px;
-    margin-bottom: 13px;
 
-    .me {
-      font-family: 'Gilroy Regular', serif;
-      font-size: 10px;
-      margin-bottom: 4px;
-      color: #282828;
+    .padding{
+      margin: 0 10px;
+      padding: 1px 2px 6px 2px;
+      border-bottom: thin solid #8c8c8c;
     }
 
-    .user {
-      font-family: 'Gilroy Regular', serif;
-      font-size: 10px;
-      margin-bottom: 4px;
-      margin-left: auto;
-      color: #758cff;
-    }
-
-
-    .prompt-text {
-      font-family: 'Bw Modelica Medium', serif;
-      font-size: 12px;
-      word-spacing: 1.5px;
-      letter-spacing: -0.7px;
-      color: #282828;
-    }
-
-    .input-text {
-      font-family: 'Bw Modelica Medium', serif;
-      font-size: 12px;
-      word-spacing: 1.5px;
-      letter-spacing: -0.7px;
-      color: #a5a5a5;
-    }
-  }
-  .submit-button{
-    display: none;
-    cursor: pointer;
-    width: 100px;
-    background-color: #2b2b2b;
-    border-radius: 8px;
-    margin-left: auto;
-    height: 38px;
-
-    .button-label {
-      margin: auto;
+    .font-style{
       font-family: "Bw Modelica Medium", serif;
-      font-size: 11px;
-      color: white;
+      font-size: 19px;
+      color: #1f1f1f;
+      padding: 3px 0 0 0;
+    }
+
+    .form_line{
+      display: flex;
+      flex-direction: row;
+      margin: 13px 0;
+    }
+
+    .button-container {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      height: 41px;
+
+      .submit-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        border: thin solid black;
+        background-color: #2b2b2b;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+        border-radius: 30px;
+
+        .button-label {
+          font-family: "Gilroy Regular", serif;
+          font-size: 13px;
+          color: white;
+          margin-right: 5px;
+        }
+        .send-icon{
+          color: white;
+        }
+      }
+      .clear-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: transparent;
+        align-items: center;
+        width: 100px;
+        border-radius: 30px;
+
+        .button-label {
+          font-family: "Gilroy Medium", serif;
+          font-size: 15px;
+          color: #1f1f1f;
+          margin-right: 5px;
+        }
+      }
     }
   }
 }

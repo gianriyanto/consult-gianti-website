@@ -1,10 +1,11 @@
 <template>
   <section id="GetStarted">
+    <blurry-background2/>
     <div class="placeholder-get-started"> </div>
     <div class="content-wrapper">
       <div class="header-container">
         <span class="header-text">
-          So, tell me a little bit about yourself
+          Tell me a little bit about yourself
         </span>
       </div>
       <Typeform id="Typeform"/>
@@ -14,10 +15,14 @@
 
 <script>
 import Typeform from "@/components/Typeform";
+import BlurryBackground2 from "@/background/BlurryBackground2";
 
 export default {
   name: "GetStarted",
-  components: {Typeform}
+  components: {
+    BlurryBackground2,
+    Typeform
+  }
 }
 </script>
 
@@ -27,38 +32,28 @@ export default {
 
   #GetStarted{
     height: fit-content;
-    margin-top: 100px;
-
-    .placeholder-get-started{
-      background-image: linear-gradient(to right top, #232323, #272727, #2a2a2a, #2e2e2e, #323232, #353535, #383838, #3b3b3b, #3e3e3e, #404040, #434343, #464646);
-      height: 90vh;
-      width: 100vw;
-    }
 
     .content-wrapper {
-      display: none;
+      display: flex;
       flex-direction: column;
       margin: 0 auto;
-      width: 39vw;
+      width: 75vw;
 
       .header-container {
-        align-self: center;
-        width: 60%;
-        padding-top: 20px;
-        text-align: center;
+        padding-top: 100px;
+        text-align: left;
 
         .header-text {
           font-family: 'Bw Modelica Bold', serif;
-          font-size: 40px;
+          font-size: 30px;
           word-spacing: 1.5px;
-          letter-spacing: -1.8px;
+          letter-spacing: -1.4px;
           line-height: 1.3;
           color: #282828;
         }
       }
       #Typeform{
-        align-self: center;
-        width: 70%;
+        padding-top: 60px;
       }
     }
   }

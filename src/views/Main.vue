@@ -2,8 +2,8 @@
   <div id="Main">
     <TopNav/>
     <Landing/>
-    <About/>
     <GetStarted/>
+    <About/>
   </div>
 </template>
 
@@ -17,9 +17,9 @@ export default {
   name: "Main",
   components: {
     About,
-    GetStarted,
     TopNav,
-    Landing
+    Landing,
+    GetStarted,
   }
 }
 </script>

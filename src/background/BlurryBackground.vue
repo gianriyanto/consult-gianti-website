@@ -1,15 +1,10 @@
 <template>
   <div id="BlurryBackground">
     <div class="canvas">
-      <span class="glass-cover">
-
-      </span>
-      <span class="circle-1">
-
-      </span>
-      <span class="circle-2">
-
-      </span>
+      <span class="glass-cover"/>
+      <span class="circle-1"/>
+      <span class="circle-2"/>
+      <span class="circle-3"/>
     </div>
   </div>
 </template>
@@ -22,45 +17,55 @@ export default {
 
 <style lang="scss" scoped>
 
-  .canvas{
+.canvas{
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -10;
+
+  .glass-cover{
     display: flex;
     position: absolute;
-    height: 100vh;
-    width: 100vw;
-    z-index: -10;
-
-    .glass-cover{
-      display: flex;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      background: rgba( 255, 255, 255, 0.6 );
-      backdrop-filter: blur( 70.0px );
-      -webkit-backdrop-filter: blur( 70.0px );
-      border-radius: 10px;
-    }
-
-    .circle-1{
-      z-index: 0;
-      display: flex;
-      position: absolute;
-      transform: translate(55vw, 70px);
-      background-color: #9589fd;
-      height: 450px;
-      width: 450px;
-      border-radius: 50%;
-    }
-    .circle-2{
-      z-index: -1;
-      display: flex;
-      position: absolute;
-      transform: translate(40vw, 0);
-      background-color: #68dddd;
-      height: 400px;
-      width: 400px;
-      border-radius: 50%;
-    }
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba( 255, 255, 255, 0.6 );
+    backdrop-filter: blur( 70.0px );
+    -webkit-backdrop-filter: blur( 70.0px );
+    border-radius: 10px;
   }
+
+  .circle-1{
+    z-index: 0;
+    display: flex;
+    position: absolute;
+    transform: translate(65vw, 0);
+    background-color: #56bff8;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+  }
+  .circle-2{
+    z-index: -1;
+    display: flex;
+    position: absolute;
+    transform: translate(20vw, 40vh);
+    background-color: #e2dc68;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+  }
+  .circle-3{
+    z-index: -1;
+    display: flex;
+    position: absolute;
+    transform: translate(0vw, 65vh);
+    background-color: #2ad079;
+    height: 550px;
+    width: 550px;
+    border-radius: 50%;
+  }
+}
 
 </style>

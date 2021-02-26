@@ -55,7 +55,7 @@ export default {
     .content-wrapper{
       display: flex;
       flex-direction: column;
-      width: 71vw;
+      width: 75vw;
       height: 95vh;
       align-self: center;
       margin: auto;
@@ -67,7 +67,7 @@ export default {
         justify-content: space-between;
 
         #LandingHeader{
-          width: 55%;
+          width: 60%;
         }
       }
 
