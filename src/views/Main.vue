@@ -3,7 +3,9 @@
     <TopNav/>
     <Landing/>
     <GetStarted/>
+    <AboutMe/>
     <About/>
+    <Contact/>
   </div>
 </template>
 
@@ -12,10 +14,12 @@ import Landing from "@/sections/Landing";
 import TopNav from "@/nav/TopNav";
 import GetStarted from "@/sections/GetStarted";
 import About from "@/sections/About";
+import Contact from "@/sections/Contact";
 
 export default {
   name: "Main",
   components: {
+    Contact,
     About,
     TopNav,
     Landing,

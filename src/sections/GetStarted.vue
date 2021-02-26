@@ -1,7 +1,6 @@
 <template>
   <section id="GetStarted">
     <blurry-background2/>
-    <div class="placeholder-get-started"> </div>
     <div class="content-wrapper">
       <div class="header-container">
         <span class="header-text">
