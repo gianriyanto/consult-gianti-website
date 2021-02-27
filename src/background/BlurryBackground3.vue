@@ -1,27 +1,27 @@
 <template>
-  <div id="BlurryBackground">
+  <div id="BlurryBackground3">
     <div class="canvas">
       <span class="glass-cover"/>
       <span class="circle-1"/>
       <span class="circle-2"/>
-      <span class="circle-3"/>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "BlurryBackground"
+  name: "BlurryBackground3"
 }
 </script>
 
 <style lang="scss" scoped>
 
+
 .canvas{
   display: flex;
   position: absolute;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   z-index: -10;
 
   .glass-cover{
@@ -39,8 +39,8 @@ export default {
     z-index: 0;
     display: flex;
     position: absolute;
-    transform: translate(65vw, 0);
-    background-color: #56bff8;
+    transform: translate(55vw, 10vh);
+    background-color: #8bccee;
     height: 500px;
     width: 500px;
     border-radius: 50%;
@@ -49,20 +49,10 @@ export default {
     z-index: -1;
     display: flex;
     position: absolute;
-    transform: translate(20vw, 40vh);
-    background-color: #e2dc68;
+    transform: translate(5vw, 40vh);
+    background-color: #74ecd0;
     height: 400px;
     width: 400px;
-    border-radius: 50%;
-  }
-  .circle-3{
-    z-index: -1;
-    display: flex;
-    position: absolute;
-    transform: translate(0vw, 65vh);
-    background-color: #2ad079;
-    height: 550px;
-    width: 550px;
     border-radius: 50%;
   }
 }

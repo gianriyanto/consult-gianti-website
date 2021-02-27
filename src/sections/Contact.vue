@@ -29,11 +29,10 @@ export default {
 <style lang="scss" scoped>
 
 #Contact {
-  height: 60vh;
-  border: thin solid lightgrey;
+  height: 65vh;
 
   .content-wrapper{
-    padding-top: 150px;
+    padding-top: 200px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -47,7 +46,7 @@ export default {
 
       .header-text {
         font-family: 'Gilroy Bold', serif;
-        font-size: 50px;
+        font-size: 60px;
         word-spacing: 1.5px;
         letter-spacing: -1.5px;
         line-height: 1.2;

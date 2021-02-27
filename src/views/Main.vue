@@ -15,10 +15,12 @@ import TopNav from "@/nav/TopNav";
 import GetStarted from "@/sections/GetStarted";
 import About from "@/sections/About";
 import Contact from "@/sections/Contact";
+import AboutMe from "@/sections/AboutMe";
 
 export default {
   name: "Main",
   components: {
+    AboutMe,
     Contact,
     About,
     TopNav,

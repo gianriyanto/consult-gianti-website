@@ -66,9 +66,9 @@ export default {
 <style lang="scss" scoped>
 
 #About{
-  display: none;
+  display: flex;
   height: fit-content;
-  margin-top: 100px;
+  margin-top: 200px;
 
   .content-wrapper {
     display: flex;

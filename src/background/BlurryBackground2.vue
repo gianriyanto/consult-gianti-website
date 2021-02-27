@@ -16,12 +16,11 @@ export default {
 
 <style lang="scss" scoped>
 
-
 .canvas{
   display: flex;
   position: absolute;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   z-index: -10;
 
   .glass-cover{
@@ -33,7 +32,6 @@ export default {
     background: rgba( 255, 255, 255, 0.6 );
     backdrop-filter: blur( 70.0px );
     -webkit-backdrop-filter: blur( 70.0px );
-    border-radius: 10px;
   }
 
   .circle-1{
@@ -41,7 +39,7 @@ export default {
     display: flex;
     position: absolute;
     transform: translate(65vw, 30vh);
-    background-color: #56bff8;
+    background-color: transparent;
     height: 500px;
     width: 500px;
     border-radius: 50%;

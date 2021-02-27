@@ -26,6 +26,19 @@
         </span>
       </span>
     </div>
+    <div class="overview-item">
+      <span class="overview-number">
+        100
+      </span>
+      <span class="overview-description">
+        <span class="description-text">
+          Clients
+        </span>
+        <span class="description-text">
+          sent abroad
+        </span>
+      </span>
+    </div>
   </div>
 </template>
 
