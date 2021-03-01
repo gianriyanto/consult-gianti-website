@@ -28,7 +28,7 @@
     </div>
     <div class="overview-item">
       <span class="overview-number">
-        100
+        75
       </span>
       <span class="overview-description">
         <span class="description-text">

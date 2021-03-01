@@ -100,17 +100,17 @@ export default {
       .card-0{
         display: flex;
         flex-direction: column;
-        background-color: #ffffff;
+        background-image: linear-gradient(to top right, #242424, #3c3c3c) ;
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.15);
 
         .text{
           padding: 40px;
           font-family: 'Bw Modelica Bold', serif;
-          font-size: 60px;
+          font-size: 50px;
           word-spacing: 1.5px;
           letter-spacing: -1.8px;
           line-height: 1.1;
-          color: #282828;
+          color: white;
         }
       }
     }
@@ -238,7 +238,7 @@ export default {
       margin: 20px 0;
 
       .card-6{
-        display: flex;
+        display: none;
         flex-direction: column;
         background-color: #ffffff;
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.15);

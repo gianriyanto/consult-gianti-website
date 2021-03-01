@@ -50,9 +50,9 @@ export default {
     display: flex;
     position: absolute;
     transform: translate(20vw, 40vh);
-    background-color: #e2dc68;
-    height: 400px;
-    width: 400px;
+    background-color: #fff975;
+    height: 450px;
+    width: 450px;
     border-radius: 50%;
   }
   .circle-3{

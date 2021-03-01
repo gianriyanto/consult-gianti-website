@@ -122,7 +122,7 @@ export default {
     display: flex;
     flex-direction: row;
     text-align: left;
-    height: 43px;
+    height: 48px;
 
     .normal-button {
       z-index: 2;
