@@ -10,6 +10,11 @@
         </span>
       </div>
       <div class="button-container">
+        <button class="my-card-button">
+          <span class="button-label">
+            Take my card
+          </span>
+        </button>
         <button class="contact-button">
           <span class="button-label">
             Contact
@@ -29,7 +34,7 @@ export default {
 <style lang="scss" scoped>
 
 #Contact {
-  height: 65vh;
+  height: 80vh;
 
   .content-wrapper{
     padding-top: 200px;
@@ -54,8 +59,30 @@ export default {
       }
     }
     .button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 35%;
       padding-top: 30px;
       align-self: center;
+
+      .my-card-button {
+        width: 160px;
+        height: 43px;
+        border: thin solid black;
+        background: rgb(28, 25, 25);
+        backdrop-filter: blur(20.0px);
+        -webkit-backdrop-filter: blur(20.0px);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+        border-radius: 30px;
+
+        .button-label {
+          font-family: "Gilroy SemiBold", serif;
+          font-size: 16px;
+          margin: auto;
+          color: white;
+        }
+      }
 
       .contact-button {
         width: 160px;
