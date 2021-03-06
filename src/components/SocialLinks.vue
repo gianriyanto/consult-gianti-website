@@ -1,17 +1,21 @@
 <template>
   <div id="SocialLinks">
-    <span class="link-container">
+    <a class="link-container"
+       v-on:click="goToSite('http://aspectamaalsut.co.id')">
       <globe-icon size="1x" class="icon"></globe-icon>
-    </span>
-    <span class="link-container">
+    </a>
+    <a class="link-container"
+      v-on:click="goToSite('https://www.instagram.com/aspectama/?hl=en')">
       <instagram-icon size="1x" class="icon"></instagram-icon>
-    </span>
-    <span class="link-container">
+    </a>
+    <a class="link-container"
+       v-on:click="goToSite('https://www.facebook.com/AspectamaStudentAdvisor/')">
       <facebook-icon size="1x" class="icon"></facebook-icon>
-    </span>
-    <span class="link-container">
+    </a>
+    <a class="link-container"
+       v-on:click="goToSite('https://goo.gl/maps/9iiTnMrh5BNJEuMT7')">
       <MapIcon size="1x" class="icon"></MapIcon>
-    </span>
+    </a>
   </div>
 </template>
 
@@ -28,6 +32,11 @@ export default {
     InstagramIcon,
     GlobeIcon,
     MapIcon
+  },
+  methods: {
+    goToSite(url) {
+      window.open(url, '_blank');
+    }
   },
 }
 </script>
