@@ -52,18 +52,19 @@ export default {
   .link-container{
     border: thin solid #1f1f1f;
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
     display: flex;
     cursor: pointer;
     transition: all .3s ease-in-out;
 
     &:hover{
-      opacity: 0.7;
+      opacity: 0.5;
     }
 
     .icon{
+      color: black;
       margin: auto;
     }
   }
