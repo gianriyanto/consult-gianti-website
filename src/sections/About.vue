@@ -100,7 +100,7 @@ export default {
       .card-0{
         display: flex;
         flex-direction: column;
-        background-image: linear-gradient(to top right, #242424, #3c3c3c) ;
+        background-image: linear-gradient(to top right, white, white) ;
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.15);
 
         .text{
@@ -110,7 +110,7 @@ export default {
           word-spacing: 1.5px;
           letter-spacing: -1.8px;
           line-height: 1.1;
-          color: white;
+          color: black;
         }
       }
     }

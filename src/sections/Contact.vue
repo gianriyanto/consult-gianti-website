@@ -1,5 +1,6 @@
 <template>
   <section id="Contact">
+    <blurry-background5/>
     <div class="content-wrapper">
       <div class="header-container">
         <span class="header-text">
@@ -26,8 +27,10 @@
 </template>
 
 <script>
+import BlurryBackground5 from "@/background/BlurryBackground5";
 export default {
-  name: "Contact"
+  name: "Contact",
+  components: {BlurryBackground5}
 }
 </script>
 
