@@ -37,7 +37,7 @@ export default {
 <style lang="scss" scoped>
 
 #Contact {
-  height: 80vh;
+  height: 75vh;
 
   .content-wrapper{
     padding-top: 200px;

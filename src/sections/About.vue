@@ -4,51 +4,62 @@
       <div class="row-a">
         <span class="card-0 horizontal">
           <span class="text">
-            Lorem ipsum dolor sit amet.
+            The 4D Approach
+          </span>
+          <span class="sub-text">
+            <span> Discovery </span>
+            <span> Design </span>
+            <span> Development </span>
+            <span> Delivery </span>
           </span>
         </span>
       </div>
       <div class="row-b">
         <span class="card-1 vertical">
+          <span class="image">
+
+          </span>
           <span class="text">
-            Ut enim ad minim veniam, quis nostrud.
+            Free talent discovery test and consultation.
           </span>
         </span>
         <span class="card-2 vertical">
           <span class="text">
-            Ullamco laboris nisi ut aliquip.
+            You have a dream? I have a way.
+          </span>
+          <span class="image">
+
           </span>
         </span>
       </div>
       <div class="row-c">
         <span class="card-3 horizontal">
           <span class="text">
-            Duis aute irure dolor in reprehenderit in.
+            Explore universities around the world
           </span>
           <span class="sub-text">
-            Dolore eu fugiat nulla pariatur.
+            Matchmaking the right course and university that unlocks your potential.
           </span>
         </span>
       </div>
       <div class="row-d">
         <span class="card-4 vertical">
           <span class="text">
-            Sint Culpa occaecat.
+            Hassle free process
+          </span>
+          <span class="image">
+
+          </span>
+          <span class="sub-text">
+            Planning your studies abroad does not have to be complicated.
           </span>
         </span>
         <span class="card-5 vertical">
           <span class="text">
-            Sunt in culpa qui officia deserunt.
-          </span>
-        </span>
-      </div>
-      <div class="row-e">
-        <span class="card-6 horizontal">
-          <span class="text">
-            Mollit anim id est laborum.
+            Tailored consultations service.
           </span>
           <span class="sub-text">
-            Dolore eu fugiat nulla pariatur.
+            Everyone is different and there is no one size fits all solution to planning your education.
           </span>
         </span>
       </div>
@@ -104,9 +115,21 @@ export default {
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.15);
 
         .text{
-          padding: 40px;
+          padding: 40px 0 0 40px;
           font-family: 'Bw Modelica Bold', serif;
           font-size: 50px;
+          word-spacing: 1.5px;
+          letter-spacing: -1.8px;
+          line-height: 1.1;
+          color: black;
+        }
+        .sub-text{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 0 0 0 40px;
+          font-family: 'Bw Modelica Bold', serif;
+          font-size: 20px;
           word-spacing: 1.5px;
           letter-spacing: -1.8px;
           line-height: 1.1;
@@ -125,16 +148,22 @@ export default {
 
       .card-1{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         background-color: #ffffff;
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
+
+        .image{
+          padding: 0 40px;
+          border: thin solid lightgrey;
+          height: 50%;
+        }
 
         .text{
           padding: 40px;
           font-family: 'Bw Modelica Bold', serif;
           font-size: 50px;
           word-spacing: 1.5px;
-          letter-spacing: -1.8px;
+          letter-spacing: -1.5px;
           line-height: 1.1;
           color: #282828;
         }
@@ -146,13 +175,20 @@ export default {
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
 
         .text{
+          text-align: right;
           padding: 40px;
           font-family: 'Bw Modelica ExtraBold', serif;
-          font-size: 70px;
+          font-size: 54px;
           word-spacing: 1.5px;
           letter-spacing: -1.8px;
           line-height: 1.1;
           color: #282828;
+        }
+
+        .image{
+          padding: 0 40px;
+          border: thin solid lightgrey;
+          height: 50%;
         }
       }
     }
@@ -172,7 +208,7 @@ export default {
         .text{
           text-align: center;
           font-family: 'Bw Modelica ExtraBold', serif;
-          font-size: 65px;
+          font-size: 60px;
           word-spacing: 1.5px;
           letter-spacing: -1.8px;
           line-height: 1.1;
@@ -180,12 +216,15 @@ export default {
           margin-bottom: 10px;
         }
         .sub-text{
+          padding-top: 10px;
           text-align: center;
-          font-family: 'Bw Modelica Medium', serif;
-          font-size: 27px;
+          align-self: center;
+          width: 65%;
+          font-family: 'Bw Modelica Regular', serif;
+          font-size: 20px;
           word-spacing: 1.5px;
-          letter-spacing: -1.8px;
-          color: #989898;
+          letter-spacing: -1.2px;
+          color: #646464;
         }
       }
     }
@@ -199,19 +238,35 @@ export default {
 
       .card-4{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        justify-content: space-evenly;
         background-color: #ffffff;
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
 
         .text{
-          text-align: right;
-          padding: 40px;
+          text-align: center;
+          padding: 40px 40px 10px 40px;
           font-family: 'Bw Modelica ExtraBold', serif;
-          font-size: 70px;
+          font-size: 50px;
           word-spacing: 1.5px;
-          letter-spacing: -1.8px;
+          letter-spacing: -1.6px;
           line-height: 1.1;
           color: #282828;
+        }
+        .image{
+          padding: 0 40px;
+          border: thin solid lightgrey;
+          height: 50%;
+        }
+        .sub-text{
+          text-align: center;
+          padding: 0 40px 40px 40px;
+          font-family: 'Bw Modelica Regular', serif;
+          font-size: 18px;
+          word-spacing: 1.5px;
+          letter-spacing: -1px;
+          line-height: 1.5;
+          color: #606060;
         }
       }
       .card-5{
@@ -221,47 +276,23 @@ export default {
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
 
         .text{
-          padding: 40px;
+          padding: 40px 40px 16px 40px;
           font-family: 'Bw Modelica Bold', serif;
-          font-size: 60px;
+          font-size: 45px;
           word-spacing: 1.5px;
           letter-spacing: -1.8px;
           line-height: 1.1;
           color: #282828;
         }
-      }
-    }
-    .row-e {
-      display: flex;
-      align-self: center;
-      width: 100%;
-      margin: 20px 0;
-
-      .card-6{
-        display: none;
-        flex-direction: column;
-        background-color: #ffffff;
-        box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.15);
-
-        .text{
-          margin-top: auto;
-          padding-top: 40px;
-          padding-left: 40px;
-          font-family: 'Bw Modelica Bold', serif;
-          font-size: 60px;
-          word-spacing: 1.5px;
-          letter-spacing: -1.8px;
-          color: #282828;
-        }
-
         .sub-text{
-          padding-bottom: 40px;
-          padding-left: 40px;
-          font-family: 'Bw Modelica Bold', serif;
-          font-size: 30px;
+          padding: 0 40px 0 40px;
+          width: 70%;
+          font-family: 'Bw Modelica Regular', serif;
+          font-size: 16px;
           word-spacing: 1.5px;
-          letter-spacing: -1.8px;
-          color: #989898;
+          letter-spacing: -1px;
+          line-height: 1.5;
+          color: #606060;
         }
       }
     }

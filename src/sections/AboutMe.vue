@@ -12,7 +12,7 @@
       </div>
       <div class="body-container">
         <span class="body-text">
-          With over 20 years in the business, I look to solve one problem - simplifying your future. I understand that the first-step can be daunting, let alone the entire nitty-gritty process of studying overseas. I designed a system and way-of-working at Aspectama to ensure your education experience is seamless and hassle-free so that you can focus on what matters most - to let your passion drive your profession.
+          With over 20 years in the business, I look to solve one problem - simplify your future. I understand that the first-step can be daunting, let alone the entire nitty-gritty process of studying overseas. I designed a system and way-of-working at Aspectama to ensure your education experience is seamless and hassle-free so that you can focus on what matters most - to let your passion drive your profession.
         </span>
       </div>
       <div class="signature">
