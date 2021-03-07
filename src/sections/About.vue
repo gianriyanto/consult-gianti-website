@@ -3,21 +3,44 @@
     <div class="content-wrapper">
       <div class="row-a">
         <span class="card-0 horizontal">
-          <span class="text">
+          <span class="sub-text">
+            <span class="approach-container">
+              <img class="image" src="@/assets/images/discovery.svg" alt ="">
+              <span class="approach-text">
+                Discovery
+              </span>
+            </span>
+            <span class="approach-container">
+              <img class="image" src="@/assets/images/design.svg" alt ="">
+              <span class="approach-text">
+                Design
+              </span>
+            </span>
+            <span class="approach-container">
+              <img class="image" src="@/assets/images/development.svg" alt ="">
+              <span class="approach-text">
+                Development
+              </span>
+            </span>
+            <span class="approach-container">
+              <img class="image" src="@/assets/images/delivery.svg" alt ="">
+              <span class="approach-text">
+                Delivery
+              </span>
+            </span>
+          </span>
+          <span class="text-header">
             The 4D Approach
           </span>
-          <span class="sub-text">
-            <span> Discovery </span>
-            <span> Design </span>
-            <span> Development </span>
-            <span> Delivery </span>
+          <span class="text">
+            The 4D approach is a tailored roadmap that allows us to tailor an end to end solution to your educational journey from discovery to delivery.
           </span>
         </span>
       </div>
       <div class="row-b">
         <span class="card-1 vertical">
           <span class="image">
-
+            <img src="@/assets/images/puzzle.svg" alt ="">
           </span>
           <span class="text">
             Free talent discovery test and consultation.
@@ -28,12 +51,15 @@
             You have a dream? I have a way.
           </span>
           <span class="image">
-
+            <img src="@/assets/images/rocket.svg" alt ="">
           </span>
         </span>
       </div>
       <div class="row-c">
         <span class="card-3 horizontal">
+          <span class="image">
+            <img src="@/assets/images/world_map.svg" alt ="">
+          </span>
           <span class="text">
             Explore universities around the world
           </span>
@@ -48,13 +74,16 @@
             Hassle free process
           </span>
           <span class="image">
-
+            <img src="@/assets/images/process.svg" alt ="">
           </span>
           <span class="sub-text">
             Planning your studies abroad does not have to be complicated.
           </span>
         </span>
         <span class="card-5 vertical">
+          <span class="image">
+            <img src="@/assets/images/isometric.svg" alt ="">
+          </span>
           <span class="text">
             Tailored consultations service.
           </span>
@@ -111,29 +140,58 @@ export default {
       .card-0{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         background-image: linear-gradient(to top right, white, white) ;
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.15);
 
-        .text{
-          padding: 40px 0 0 40px;
+        .text-header{
+          margin: 0px auto 10px auto;
           font-family: 'Bw Modelica Bold', serif;
-          font-size: 50px;
+          font-size: 60px;
           word-spacing: 1.5px;
           letter-spacing: -1.8px;
           line-height: 1.1;
           color: black;
         }
-        .sub-text{
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          padding: 0 0 0 40px;
-          font-family: 'Bw Modelica Bold', serif;
-          font-size: 20px;
+        .text{
+          text-align: center;
+          width: 70%;
+          margin: 0 auto 40px auto;
+          font-family: 'Bw Modelica Regular', serif;
+          font-size: 16px;
           word-spacing: 1.5px;
-          letter-spacing: -1.8px;
-          line-height: 1.1;
-          color: black;
+          letter-spacing: -1px;
+          line-height: 1.5;
+          color: #666666;
+        }
+        .sub-text{
+          margin: 40px auto 30px auto;
+          width: 90%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+
+          .approach-container{
+            width: 25%;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+
+            .image{
+              margin: 10px auto;
+              width: 90%;
+            }
+
+            .approach-text{
+              font-family: 'Bw Modelica Bold', serif;
+              text-align: center;
+              font-size: 20px;
+              word-spacing: 1.5px;
+              letter-spacing: -1px;
+              line-height: 1.1;
+              color: #474747;
+            }
+          }
         }
       }
     }
@@ -149,22 +207,24 @@ export default {
       .card-1{
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         background-color: #ffffff;
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
 
         .image{
-          padding: 0 40px;
-          border: thin solid lightgrey;
+          margin: 30px auto 0 auto;
           height: 50%;
+          width: 80%;
         }
 
         .text{
-          padding: 40px;
-          font-family: 'Bw Modelica Bold', serif;
+          height: 50%;
+          padding: 5px 40px 40px 40px;
+          font-family: 'Bw Modelica ExtraBold', serif;
           font-size: 50px;
           word-spacing: 1.5px;
           letter-spacing: -1.5px;
-          line-height: 1.1;
+          line-height: 1.2;
           color: #282828;
         }
       }
@@ -176,7 +236,8 @@ export default {
 
         .text{
           text-align: right;
-          padding: 40px;
+          height: 40%;
+          padding: 40px 40px 0 40px;
           font-family: 'Bw Modelica ExtraBold', serif;
           font-size: 54px;
           word-spacing: 1.5px;
@@ -186,9 +247,9 @@ export default {
         }
 
         .image{
-          padding: 0 40px;
-          border: thin solid lightgrey;
-          height: 50%;
+          margin: 0 auto;
+          height: 80%;
+          width: 100%
         }
       }
     }
@@ -205,26 +266,34 @@ export default {
         background-color: #ffffff;
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.15);
 
+        .image{
+          margin: 0 auto;
+          height: 40%;
+          width: 40%;
+        }
         .text{
+          height: fit-content;
           text-align: center;
           font-family: 'Bw Modelica ExtraBold', serif;
+          padding: 40px 60px 0 60px;
           font-size: 60px;
+          margin: 0 auto;
+          width: 75%;
           word-spacing: 1.5px;
           letter-spacing: -1.8px;
           line-height: 1.1;
           color: #282828;
-          margin-bottom: 10px;
         }
         .sub-text{
-          padding-top: 10px;
+          margin-top: 15px;
           text-align: center;
           align-self: center;
           width: 65%;
           font-family: 'Bw Modelica Regular', serif;
-          font-size: 20px;
+          font-size: 17px;
           word-spacing: 1.5px;
           letter-spacing: -1.2px;
-          color: #646464;
+          color: #7e7e7e;
         }
       }
     }
@@ -245,7 +314,7 @@ export default {
 
         .text{
           text-align: center;
-          padding: 40px 40px 10px 40px;
+          padding: 40px 40px 0 40px;
           font-family: 'Bw Modelica ExtraBold', serif;
           font-size: 50px;
           word-spacing: 1.5px;
@@ -254,13 +323,13 @@ export default {
           color: #282828;
         }
         .image{
-          padding: 0 40px;
-          border: thin solid lightgrey;
-          height: 50%;
+          margin: 0 auto;
+          height: 60%;
+          width: 100%;
         }
         .sub-text{
           text-align: center;
-          padding: 0 40px 40px 40px;
+          padding: 15px 40px 40px 40px;
           font-family: 'Bw Modelica Regular', serif;
           font-size: 18px;
           word-spacing: 1.5px;
@@ -272,20 +341,27 @@ export default {
       .card-5{
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         background-color: #ffffff;
         box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
 
+        .image{
+          margin: 30px auto 0 auto;
+          height: 50%;
+          width: 80%;
+        }
+
         .text{
-          padding: 40px 40px 16px 40px;
-          font-family: 'Bw Modelica Bold', serif;
-          font-size: 45px;
+          padding: 0 40px 15px 40px;
+          font-family: 'Bw Modelica ExtraBold', serif;
+          font-size: 40px;
           word-spacing: 1.5px;
-          letter-spacing: -1.8px;
+          letter-spacing: -1.5px;
           line-height: 1.1;
           color: #282828;
         }
         .sub-text{
-          padding: 0 40px 0 40px;
+          padding: 0 40px 40px 40px;
           width: 70%;
           font-family: 'Bw Modelica Regular', serif;
           font-size: 16px;
