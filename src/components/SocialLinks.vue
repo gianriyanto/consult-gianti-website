@@ -52,9 +52,9 @@ export default {
   .link-container{
     border: thin solid #1f1f1f;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-right: 12px;
+    width: 45px;
+    height: 45px;
+    margin-right: 13px;
     display: flex;
     cursor: pointer;
     transition: all .3s ease-in-out;

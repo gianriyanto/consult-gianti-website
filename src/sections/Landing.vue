@@ -62,7 +62,7 @@ export default {
 
       .header-wrapper{
         display: flex;
-        padding-top: 20%;
+        padding-top: 18%;
         flex-direction: row;
         justify-content: space-between;
 

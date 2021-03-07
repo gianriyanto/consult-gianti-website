@@ -71,7 +71,7 @@ export default {
     .dash {
       width: 37px;
       height: 2px;
-      background-color: #5651ec;
+      background-color: #4f4f4f;
       border: none;
       margin: auto 10px auto 0;
     }
@@ -103,18 +103,18 @@ export default {
   }
 
   .subheader-container{
-    width: 90%;
-    padding-top: 10px;
+    width: 80%;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     text-align: left;
 
     .subheader-text{
-      font-family: "Bw Modelica Regular", serif;
-      font-size: 15px;
-      color: #1f1f1f;
+      font-family: "Bw Modelica Light", serif;
+      font-size: 16px;
+      color: #4e4e4e;
       letter-spacing: -0.3px;
-      line-height: 1.8;
+      line-height: 2;
     }
   }
 

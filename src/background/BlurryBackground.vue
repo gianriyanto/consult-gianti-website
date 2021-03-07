@@ -5,6 +5,7 @@
       <span class="circle-1"/>
       <span class="circle-2"/>
       <span class="circle-3"/>
+      <span class="circle-4"/>
     </div>
   </div>
 </template>
@@ -40,12 +41,22 @@ export default {
     display: flex;
     position: absolute;
     transform: translate(65vw, 0);
-    background-color: #56bff8;
+    background-color: #81d2ff;
     height: 500px;
     width: 500px;
     border-radius: 50%;
   }
   .circle-2{
+    z-index: -1;
+    display: flex;
+    position: absolute;
+    transform: translate(75vw, 30vh);
+    background-color: #7ce2ca;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+  }
+  .circle-3{
     z-index: -1;
     display: flex;
     position: absolute;
@@ -55,12 +66,12 @@ export default {
     width: 450px;
     border-radius: 50%;
   }
-  .circle-3{
+  .circle-4{
     z-index: -1;
     display: flex;
     position: absolute;
     transform: translate(0vw, 65vh);
-    background-color: #2ad079;
+    background-color: #5eeec0;
     height: 550px;
     width: 550px;
     border-radius: 50%;
