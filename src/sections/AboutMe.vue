@@ -7,12 +7,12 @@
           About Me
         </span>
         <span class="header-text">
-          We can build new digital products from ground up, or upgrade existing ones to cope with new demands and growing user base.
+          I build education blueprints from the ground up one person at a time by carefully leveraging your talent, skills, and passion.
         </span>
       </div>
       <div class="body-container">
         <span class="body-text">
-          Aspectama is a team of multidisciplinary digital product experts who can take on any challenge in the sphere of web and mobile app-development. We create digital experiences that are human-centered and future proof.
+          With over 20 years in the business, I look to solve one problem - simplifying your future. I understand that the first-step can be daunting, let alone the entire nitty-gritty process of studying overseas. I designed a system and way-of-working at Aspectama to ensure your education experience is seamless and hassle-free so that you can focus on what matters most - to let your passion drive your profession.
         </span>
       </div>
       <div class="signature">
@@ -60,7 +60,7 @@ export default {
         .header-text {
           padding-top: 25px;
           font-family: 'Gilroy Bold', serif;
-          font-size: 41px;
+          font-size: 44px;
           word-spacing: 1.8px;
           letter-spacing: -1.3px;
           line-height: 1.3;
