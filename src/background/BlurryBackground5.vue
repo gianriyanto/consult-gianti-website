@@ -41,8 +41,8 @@ export default {
     z-index: 0;
     display: flex;
     position: absolute;
-    transform: translate(45vw, 10vh);
-    background-color: #83cef5;
+    transform: translate(50vw, 10vh);
+    background-color: #9eddfd;
     height: 700px;
     width: 700px;
     border-radius: 50%;
@@ -51,8 +51,8 @@ export default {
     z-index: -1;
     display: flex;
     position: absolute;
-    transform: translate(2vw, 35vh);
-    background-color: #6aeeb4;
+    transform: translate(1vw, 40vh);
+    background-color: #8ff8ca;
     height: 500px;
     width: 500px;
     border-radius: 50%;
@@ -72,7 +72,7 @@ export default {
     display: flex;
     position: absolute;
     transform: translate(23vw, 40vh);
-    background-color: #ffbebe;
+    background-color: #efafaf;
     height: 300px;
     width: 300px;
     border-radius: 50%;

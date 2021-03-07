@@ -12,9 +12,10 @@
       </div>
       <div class="body-container">
         <span class="body-text">
-          With over 20 years in the business, I look to solve one problem - simplify your future. I understand that the first-step can be daunting, let alone the entire nitty-gritty process of studying overseas. I designed a system and way-of-working at Aspectama to ensure your education experience is seamless and hassle-free so that you can focus on what matters most - to let your passion drive your profession.
+          With over 20 years in the business, I look to solve one problem - simplify your future. I understand that the first-step can be daunting, let alone the entire nitty-gritty process of planning to study overseas. I designed a system and way-of-working to ensure your education experience is seamless and hassle-free so that you can focus on what matters most - to let your passion drive your profession.
         </span>
       </div>
+      <img class="signature-image" src="@/assets/images/signature.svg" alt ="">
       <div class="signature">
         <img/>
       </div>
@@ -71,16 +72,17 @@ export default {
         padding-top: 35px;
 
         .body-text{
-          font-family: 'Bw Modelica Regular', serif;
+          font-family: 'Bw Modelica Light', serif;
           font-size: 16px;
           word-spacing: 1.5px;
           letter-spacing: -0.5px;
           line-height: 2;
-          color: #2f2f2f;
+          color: #454545;
         }
       }
-      .signature{
-
+      .signature-image{
+        width: 40%;
+        height: auto;
       }
     }
   }
