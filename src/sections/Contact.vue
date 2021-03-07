@@ -37,10 +37,10 @@ export default {
 <style lang="scss" scoped>
 
 #Contact {
-  height: 75vh;
+  height: 70vh;
 
   .content-wrapper{
-    padding-top: 200px;
+    padding-top: 300px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -54,7 +54,7 @@ export default {
 
       .header-text {
         font-family: 'Gilroy Bold', serif;
-        font-size: 60px;
+        font-size: 65px;
         word-spacing: 1.5px;
         letter-spacing: -1.5px;
         line-height: 1.2;
@@ -65,13 +65,13 @@ export default {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      width: 35%;
+      width: 41%;
       padding-top: 30px;
       align-self: center;
+      height: 50px;
 
       .my-card-button {
-        width: 160px;
-        height: 43px;
+        width: 180px;
         border: thin solid black;
         background: rgb(28, 25, 25);
         backdrop-filter: blur(20.0px);
@@ -88,8 +88,7 @@ export default {
       }
 
       .contact-button {
-        width: 160px;
-        height: 43px;
+        width: 180px;
         border: thin solid black;
         background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(20.0px);

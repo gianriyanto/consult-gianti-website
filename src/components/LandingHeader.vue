@@ -28,7 +28,8 @@
         </span>
       </button>
       <button class="get-started-button">
-        <span class="button-label">
+        <span class="button-label"
+              v-scroll-to="{ el: '#GetStarted', easing: [.2, .80, .30, 1],duration: 1500}">
           Let's get started
         </span>
       </button>
@@ -159,11 +160,11 @@ export default {
       position: fixed;
       cursor: pointer;
       top: 0;
-      transform: translate(75vw, 87vh);
-      background-color: #242424;
+      transform: translate(78vw, 86vh);
+      background-image: linear-gradient(to top right, #242424, #484848);
       border-radius: 50%;
-      width: 65px;
-      height: 65px;
+      width: 70px;
+      height: 70px;
       transition: all 1.2s ease-in-out;
       box-shadow: 0 8px 32px 0 rgba(99, 100, 114, 0.4);
 
