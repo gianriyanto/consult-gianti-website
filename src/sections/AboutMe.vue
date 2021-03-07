@@ -2,11 +2,14 @@
   <section id="AboutMe">
     <blurry-background3/>
     <div class="content-wrapper">
-      <div class="header-container">
+      <div class="pre-header-container">
         <span class="pre-header-text">
-          About Me
+          <hr class="dash" noshade/>
+          <span class="text">
+            About Me
+          </span>
         </span>
-        <span class="header-text">
+        <span class="pre-header-text">
           I build education blueprints from the ground up one person at a time by carefully leveraging your talent, skills, and passion.
         </span>
       </div>
@@ -44,21 +47,33 @@ export default {
       margin: 0 auto;
       width: 45vw;
 
-      .header-container {
+      .pre-header-container {
         padding-top: 200px;
         display: flex;
         flex-direction: column;
         text-align: left;
 
-        .pre-header-text {
-          font-family: 'Gilroy Regular', serif;
-          font-size: 20px;
-          word-spacing: 1.5px;
-          letter-spacing: -0.4px;
-          line-height: 1.3;
-          color: #919191;
+        .pre-header-text{
+          display: flex;
+          flex-direction: row;
+
+          .dash{
+            width: 30px;
+            height: 1px;
+            background-color: #919191;
+            border: none;
+            margin: auto 10px auto 0;
+          }
+          .text {
+            font-family: 'Bw Modelica Light', serif;
+            font-size: 20px;
+            word-spacing: 1.5px;
+            letter-spacing: -0.4px;
+            line-height: 1.3;
+            color: #919191;
+          }
         }
-        .header-text {
+        .pre-header-text {
           padding-top: 25px;
           font-family: 'Gilroy Bold', serif;
           font-size: 44px;

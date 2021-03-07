@@ -7,10 +7,10 @@
       </span>
     </div>
     <div class="header-wrapper">
-      <span class="header-text">
+      <span class="pre-header-text">
         I'm Gianti.
       </span>
-      <span class="header-text">
+      <span class="pre-header-text">
         Your education counselor.
       </span>
     </div>
@@ -92,7 +92,7 @@ export default {
     flex-direction: column;
     text-align: left;
 
-    .header-text {
+    .pre-header-text {
       font-family: 'Bw Modelica Bold', serif;
       font-size: 50px;
       word-spacing: 1.3px;

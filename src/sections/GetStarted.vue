@@ -2,8 +2,8 @@
   <section id="GetStarted">
     <blurry-background2/>
     <div class="content-wrapper">
-      <div class="header-container">
-        <span class="header-text">
+      <div class="pre-header-container">
+        <span class="pre-header-text">
           Tell me a little bit about yourself
         </span>
       </div>
@@ -38,11 +38,11 @@ export default {
       margin: 0 auto;
       width: 70vw;
 
-      .header-container {
+      .pre-header-container {
         padding-top: 100px;
         text-align: left;
 
-        .header-text {
+        .pre-header-text {
           font-family: 'Bw Modelica Bold', serif;
           font-size: 30px;
           word-spacing: 1.5px;

@@ -2,11 +2,11 @@
   <section id="Contact">
     <blurry-background5/>
     <div class="content-wrapper">
-      <div class="header-container">
-        <span class="header-text">
+      <div class="pre-header-container">
+        <span class="pre-header-text">
           Ready to build your future?
         </span>
-        <span class="header-text">
+        <span class="pre-header-text">
           Let's get started.
         </span>
       </div>
@@ -46,13 +46,13 @@ export default {
     margin: auto;
     width: 75vw;
 
-    .header-container{
+    .pre-header-container{
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
 
-      .header-text {
+      .pre-header-text {
         font-family: 'Gilroy Bold', serif;
         font-size: 65px;
         word-spacing: 1.5px;
