@@ -1,17 +1,17 @@
 <template>
   <section id="HowIWork">
     <div class="content-wrapper">
-      <span class="pre-header-container">
-        <hr class="dash" noshade/>
-        <span class="text">
-          How I Work
+      <div class="header-container">
+        <span class="pre-header-container">
+          <hr class="dash" noshade/>
+          <span class="pre-header-text">
+            How I Work
+          </span>
         </span>
-      </span>
-      <span class="header-container">
         <span class="header-text">
           Trust the process
         </span>
-      </span>
+      </div>
       <span class="process-container">
 
       </span>
@@ -34,48 +34,42 @@ export default {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 80vw;
+    width: 75vw;
 
-    .pre-header-container{
-      padding-top: 100px;
+    .header-container {
+      padding-top: 150px;
+      text-align: left;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
 
-      .dash{
-        width: 30px;
-        height: 1px;
-        background-color: #919191;
-        border: none;
-        margin: auto 10px auto 0;
-      }
-      .text {
-        font-family: 'Bw Modelica Light', serif;
-        font-size: 20px;
-        word-spacing: 1.5px;
-        letter-spacing: -0.4px;
-        line-height: 1.3;
-        color: #919191;
-      }
-    }
-    .header-container{
-      padding-top: 25px;
-      display: flex;
-      flex-direction: row;
+      .pre-header-container{
+        display: flex;
+        flex-direction: row;
 
-      .dash{
-        width: 30px;
-        height: 2px;
-        background-color: #919191;
-        border: none;
-        margin: auto 10px auto 0;
+        .dash{
+          width: 20px;
+          height: 1px;
+          background-color: #4f4f4f;
+          border: none;
+          margin: auto 10px auto 0;
+        }
+        .pre-header-text {
+          font-family: 'Bw Modelica Medium', serif;
+          font-size: 16px;
+          word-spacing: 1.5px;
+          letter-spacing: -0.4px;
+          line-height: 1.3;
+          color: #4f4f4f;
+        }
       }
       .header-text {
+        padding-top: 20px;
         font-family: 'Gilroy Bold', serif;
-        font-size: 35px;
-        word-spacing: 1.5px;
-        letter-spacing: -0.4px;
+        font-size: 44px;
+        word-spacing: 1.8px;
+        letter-spacing: -1.3px;
         line-height: 1.3;
-        color: #292929;
+        color: #1a1a1a;
       }
     }
     .process-container{

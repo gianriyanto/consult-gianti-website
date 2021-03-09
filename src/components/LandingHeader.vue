@@ -1,16 +1,16 @@
 <template>
   <div id="LandingHeader">
-    <div class="pre-header-container">
+    <div class="header-container">
       <hr class="dash" noshade/>
-      <span class="pre-header-text">
+      <span class="pre-header-container">
         Hi there,
       </span>
     </div>
     <div class="header-wrapper">
-      <span class="pre-header-text">
+      <span class="pre-header-container">
         I'm Gianti.
       </span>
-      <span class="pre-header-text">
+      <span class="pre-header-container">
         Your education counselor.
       </span>
     </div>
@@ -64,7 +64,7 @@ export default {
   display: flex;
   flex-direction: column;
 
-  .pre-header-container{
+  .header-container{
     display: flex;
     flex-direction: row;
 
@@ -76,7 +76,7 @@ export default {
       margin: auto 10px auto 0;
     }
 
-    .pre-header-text{
+    .pre-header-container{
       font-family: 'Bw Modelica Medium', serif;
       font-size: 19px;
       word-spacing: 1.5px;
@@ -92,7 +92,7 @@ export default {
     flex-direction: column;
     text-align: left;
 
-    .pre-header-text {
+    .pre-header-container {
       font-family: 'Bw Modelica Bold', serif;
       font-size: 50px;
       word-spacing: 1.3px;

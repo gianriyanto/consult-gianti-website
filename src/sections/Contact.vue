@@ -2,12 +2,16 @@
   <section id="Contact">
     <blurry-background5/>
     <div class="content-wrapper">
-      <div class="pre-header-container">
-        <span class="pre-header-text">
+      <div class="header-container">
+        <span class="pre-header-container">
           Ready to build your future?
         </span>
-        <span class="pre-header-text">
-          Let's get started.
+        <span class="pre-header-container">
+          Let's get
+          <span class="underline"
+                v-scroll-to="{ el: '#GetStarted', easing: [.2, .80, .30, 1],duration: 1500}">
+            started.
+          </span>
         </span>
       </div>
       <div class="button-container">
@@ -46,19 +50,29 @@ export default {
     margin: auto;
     width: 75vw;
 
-    .pre-header-container{
+    .header-container{
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
 
-      .pre-header-text {
+      .pre-header-container {
         font-family: 'Gilroy Bold', serif;
         font-size: 65px;
         word-spacing: 1.5px;
         letter-spacing: -1.5px;
         line-height: 1.2;
         color: #282828;
+
+        .underline{
+          border-bottom: 2px solid currentColor;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          &:hover{
+            opacity: 0.6;
+          }
+        }
       }
     }
     .button-container {
@@ -68,7 +82,7 @@ export default {
       width: 41%;
       padding-top: 30px;
       align-self: center;
-      height: 50px;
+      height: 53px;
 
       .my-card-button {
         width: 180px;

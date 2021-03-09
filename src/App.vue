@@ -38,6 +38,11 @@ button{
   text-decoration: none;
   outline: none;
   border: 0;
+  transition: all 0.25s ease-in-out;
+
+  &:hover{
+    opacity: 0.6;
+  }
 }
 
 a {

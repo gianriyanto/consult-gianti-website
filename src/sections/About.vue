@@ -157,12 +157,12 @@ export default {
           text-align: center;
           width: 70%;
           margin: 0 auto 40px auto;
-          font-family: 'Bw Modelica Regular', serif;
-          font-size: 16px;
+          font-family: 'Bw Modelica Light', serif;
+          font-size: 17px;
           word-spacing: 1.5px;
-          letter-spacing: -1px;
+          letter-spacing: -0.8px;
           line-height: 1.5;
-          color: #666666;
+          color: #3e3e3e;
         }
         .sub-text{
           margin: 40px auto 30px auto;
@@ -183,13 +183,13 @@ export default {
             }
 
             .approach-text{
-              font-family: 'Bw Modelica Bold', serif;
+              font-family: 'Bw Modelica Medium', serif;
               text-align: center;
-              font-size: 20px;
+              font-size: 18px;
               word-spacing: 1.5px;
               letter-spacing: -1px;
               line-height: 1.1;
-              color: #474747;
+              color: #282828;
             }
           }
         }

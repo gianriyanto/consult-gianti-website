@@ -2,14 +2,14 @@
   <section id="AboutMe">
     <blurry-background3/>
     <div class="content-wrapper">
-      <div class="pre-header-container">
-        <span class="pre-header-text">
+      <div class="header-container">
+        <span class="pre-header-container">
           <hr class="dash" noshade/>
-          <span class="text">
+          <span class="pre-header-text">
             About Me
           </span>
         </span>
-        <span class="pre-header-text">
+        <span class="header-text">
           I build education blueprints from the ground up one person at a time by carefully leveraging your talent, skills, and passion.
         </span>
       </div>
@@ -47,34 +47,34 @@ export default {
       margin: 0 auto;
       width: 45vw;
 
-      .pre-header-container {
+      .header-container {
         padding-top: 200px;
         display: flex;
         flex-direction: column;
         text-align: left;
 
-        .pre-header-text{
+        .pre-header-container{
           display: flex;
           flex-direction: row;
 
           .dash{
-            width: 30px;
+            width: 20px;
             height: 1px;
-            background-color: #919191;
+            background-color: #4f4f4f;
             border: none;
             margin: auto 10px auto 0;
           }
-          .text {
-            font-family: 'Bw Modelica Light', serif;
-            font-size: 20px;
+          .pre-header-text {
+            font-family: 'Bw Modelica Medium', serif;
+            font-size: 16px;
             word-spacing: 1.5px;
             letter-spacing: -0.4px;
             line-height: 1.3;
-            color: #919191;
+            color: #4f4f4f;
           }
         }
-        .pre-header-text {
-          padding-top: 25px;
+        .header-text {
+          padding-top: 20px;
           font-family: 'Gilroy Bold', serif;
           font-size: 44px;
           word-spacing: 1.8px;
