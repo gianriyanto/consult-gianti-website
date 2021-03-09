@@ -18,13 +18,13 @@ export default {
 
 <style lang="scss" scoped>
 
-
 .canvas{
   display: flex;
   position: absolute;
-  height: 100%;
+  height: 75vh;
   width: 100%;
   z-index: -10;
+  overflow-x: hidden;
 
   .glass-cover{
     display: flex;
@@ -33,15 +33,15 @@ export default {
     height: 100%;
     z-index: 1;
     background: rgba( 255, 255, 255, 0.6 );
-    backdrop-filter: blur( 70.0px );
-    -webkit-backdrop-filter: blur( 70.0px );
+    backdrop-filter: blur( 90.0px );
+    -webkit-backdrop-filter: blur( 90.0px );
   }
 
   .circle-1{
     z-index: 0;
     display: flex;
     position: absolute;
-    transform: translate(50vw, 10vh);
+    transform: translate(50vw, 30vh);
     background-color: #9eddfd;
     height: 700px;
     width: 700px;

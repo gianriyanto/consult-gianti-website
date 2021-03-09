@@ -36,7 +36,7 @@ export default {
 @media only screen and (min-width: 769px) {
 
   #GetStarted{
-    height: fit-content;
+    height: 55vh;
 
     .content-wrapper {
       display: flex;

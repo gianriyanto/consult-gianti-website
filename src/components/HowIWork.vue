@@ -1,5 +1,5 @@
 <template>
-  <section id="HowIWork">
+  <div id="HowIWork">
     <div class="content-wrapper">
       <div class="header-container">
         <span class="pre-header-container">
@@ -9,19 +9,20 @@
           </span>
         </span>
         <span class="header-text">
-          Trust the process
+          Trust the process.
         </span>
       </div>
-      <span class="process-container">
-
-      </span>
+      <Process id="Process"/>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
+import Process from "@/components/Process";
+
 export default {
-  name: "HowIWork"
+  name: "HowIWork",
+  components: {Process}
 }
 </script>
 
@@ -34,7 +35,7 @@ export default {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 75vw;
+    width: 70vw;
 
     .header-container {
       padding-top: 150px;
@@ -72,9 +73,8 @@ export default {
         color: #1a1a1a;
       }
     }
-    .process-container{
+    #Process{
       padding-top: 50px;
-      border: thin solid grey;
     }
   }
 }

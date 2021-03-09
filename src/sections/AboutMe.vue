@@ -23,14 +23,17 @@
         <img/>
       </div>
     </div>
+    <HowIWork/>
   </section>
 </template>
 
 <script>
 import BlurryBackground3 from "@/background/BlurryBackground3";
+import HowIWork from "@/components/HowIWork";
+
 export default {
   name: "AboutMe",
-  components: {BlurryBackground3}
+  components: {HowIWork, BlurryBackground3}
 }
 </script>
 
@@ -39,7 +42,7 @@ export default {
 @media only screen and (min-width: 769px) {
 
   #AboutMe {
-    height: fit-content;
+    height: 140vh;
 
     .content-wrapper {
       display: flex;

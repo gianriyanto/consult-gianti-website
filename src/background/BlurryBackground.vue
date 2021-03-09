@@ -21,9 +21,10 @@ export default {
 .canvas{
   display: flex;
   position: absolute;
-  height: 100vh;
+  height: 155vh;
   width: 100vw;
-  z-index: -10;
+  z-index: -1;
+  overflow-x: hidden;
 
   .glass-cover{
     display: flex;
@@ -32,8 +33,8 @@ export default {
     height: 100%;
     z-index: 1;
     background: rgba( 255, 255, 255, 0.6 );
-    backdrop-filter: blur( 70.0px );
-    -webkit-backdrop-filter: blur( 70.0px );
+    backdrop-filter: blur( 90.0px );
+    -webkit-backdrop-filter: blur( 90.0px );
   }
 
   .circle-1{
@@ -60,8 +61,8 @@ export default {
     z-index: -1;
     display: flex;
     position: absolute;
-    transform: translate(20vw, 40vh);
-    background-color: #fff975;
+    transform: translate(15vw, 40vh);
+    background-color: #fffba6;
     height: 450px;
     width: 450px;
     border-radius: 50%;
@@ -70,8 +71,8 @@ export default {
     z-index: -1;
     display: flex;
     position: absolute;
-    transform: translate(0vw, 65vh);
-    background-color: #5eeec0;
+    transform: translate(-15vw, 65vh);
+    background-color: #9affdf;
     height: 550px;
     width: 550px;
     border-radius: 50%;

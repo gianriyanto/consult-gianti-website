@@ -18,14 +18,14 @@
 import TopBar from "@/components/TopBar";
 import Overview from "@/components/Overview";
 import SocialLinks from "@/components/SocialLinks";
-import BlurryBackground from "@/background/BlurryBackground";
 import LandingHeader from "@/components/LandingHeader";
+import BlurryBackground from "@/background/BlurryBackground";
 
 export default {
   name: "Landing",
   components: {
-    LandingHeader,
     BlurryBackground,
+    LandingHeader,
     SocialLinks,
     Overview,
     TopBar,

@@ -4,7 +4,6 @@
     <Landing/>
     <GetStarted/>
     <AboutMe/>
-    <HowIWork/>
     <About/>
     <Contact/>
   </div>
@@ -17,12 +16,10 @@ import GetStarted from "@/sections/GetStarted";
 import About from "@/sections/About";
 import Contact from "@/sections/Contact";
 import AboutMe from "@/sections/AboutMe";
-import HowIWork from "@/sections/HowIWork";
 
 export default {
   name: "Main",
   components: {
-    HowIWork,
     AboutMe,
     Contact,
     About,
@@ -35,10 +32,9 @@ export default {
 
 <style lang="scss" scoped>
 
-  #Main {
+  #Main{
     display: flex;
     flex-direction: column;
-
   }
 
 </style>
