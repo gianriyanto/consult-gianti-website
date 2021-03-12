@@ -7,13 +7,13 @@
         </span>
         <inline-input class="padding" v-bind:inputData="name"/>
         <span class="font-style">
-          and I'm looking for an
+          and I'm interested in an
         </span>
         <inline-input class="padding" v-bind:inputData="programs"/>
       </div>
       <div class="form_line font-style">
         <span class="font-style">
-          I'm interested in studying
+          to study and learn about
         </span>
         <inline-input class="padding" v-bind:inputData="course"/>
         <span class="font-style">
