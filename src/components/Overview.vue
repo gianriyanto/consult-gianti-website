@@ -50,40 +50,43 @@ export default {
 
 <style lang="scss" scoped>
 
-#Overview {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  height: fit-content;
+@media only screen and (min-width: 769px) {
 
-  .overview-item{
-    padding-top: 10px;
+  #Overview {
     display: flex;
-    flex-direction: row;
-    width: fit-content;
-    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    height: fit-content;
 
-    .overview-number{
-      font-family: 'Gilroy Bold', serif;
-      font-size: 60px;
-      word-spacing: 1.5px;
-      letter-spacing: -0.5px;
-      color: #282828;
-      margin-right: 20px;
-    }
-
-    .overview-description{
+    .overview-item {
+      padding-top: 10px;
       display: flex;
-      flex-direction: column;
-      padding-bottom: 10px;
+      flex-direction: row;
+      width: fit-content;
+      align-items: center;
 
-      .description-text{
-        font-family: 'Gilroy Regular', serif;
-        font-size: 15px;
+      .overview-number {
+        font-family: 'Gilroy Bold', serif;
+        font-size: 60px;
         word-spacing: 1.5px;
         letter-spacing: -0.5px;
-        line-height: 1.3;
         color: #282828;
+        margin-right: 20px;
+      }
+
+      .overview-description {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+
+        .description-text {
+          font-family: 'Gilroy Regular', serif;
+          font-size: 15px;
+          word-spacing: 1.5px;
+          letter-spacing: -0.5px;
+          line-height: 1.3;
+          color: #282828;
+        }
       }
     }
   }

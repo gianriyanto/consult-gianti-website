@@ -105,274 +105,289 @@ export default {
 
 <style lang="scss" scoped>
 
-#About{
-  display: flex;
-  height: fit-content;
-  margin-top: 150px;
+@media only screen and (min-width: 769px) {
 
-  .content-wrapper {
+  #About {
     display: flex;
-    flex-direction: column;
     height: fit-content;
-    max-width: 850px;
-    width: 55vw;
-    margin: 0 auto;
+    margin-top: 150px;
 
-    .horizontal{
-      width: 100%;
-      height: 65vh;
-      max-height: 500px;
-      border-radius: 25px;
-    }
-    .vertical{
-      width: 49%;
-      height: 70vh;
-      max-height: 700px;
-      border-radius: 25px;
-    }
-
-    .row-a {
+    .content-wrapper {
       display: flex;
-      align-self: center;
-      width: 100%;
-      margin: 20px 0;
+      flex-direction: column;
+      height: fit-content;
+      max-width: 850px;
+      width: 55vw;
+      margin: 0 auto;
 
-      .card-0{
+      .horizontal {
+        width: 100%;
+        height: 65vh;
+        max-height: 500px;
+        border-radius: 25px;
+      }
+
+      .vertical {
+        width: 49%;
+        height: 70vh;
+        max-height: 700px;
+        border-radius: 25px;
+      }
+
+      .row-a {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-image: linear-gradient(to top right, white, white) ;
-        box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.15);
+        align-self: center;
+        width: 100%;
+        margin: 20px 0;
 
-        .text-header{
-          margin: 0px auto 10px auto;
-          font-family: 'Bw Modelica Bold', serif;
-          font-size: 60px;
-          word-spacing: 1.5px;
-          letter-spacing: -1.8px;
-          line-height: 1.1;
-          color: black;
-        }
-        .text{
-          text-align: center;
-          width: 70%;
-          margin: 0 auto 40px auto;
-          font-family: 'Bw Modelica Light', serif;
-          font-size: 17px;
-          word-spacing: 1.5px;
-          letter-spacing: -0.8px;
-          line-height: 1.5;
-          color: #3e3e3e;
-        }
-        .sub-text{
-          margin: 40px auto 30px auto;
-          width: 90%;
+        .card-0 {
           display: flex;
-          flex-direction: row;
-          justify-content: space-evenly;
+          flex-direction: column;
+          justify-content: center;
+          background-image: linear-gradient(to top right, white, white);
+          box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.15);
 
-          .approach-container{
-            width: 25%;
+          .text-header {
+            margin: 0px auto 10px auto;
+            font-family: 'Bw Modelica Bold', serif;
+            font-size: 60px;
+            word-spacing: 1.5px;
+            letter-spacing: -1.8px;
+            line-height: 1.1;
+            color: black;
+          }
+
+          .text {
+            text-align: center;
+            width: 70%;
+            margin: 0 auto 40px auto;
+            font-family: 'Bw Modelica Light', serif;
+            font-size: 17px;
+            word-spacing: 1.5px;
+            letter-spacing: -0.8px;
+            line-height: 1.5;
+            color: #3e3e3e;
+          }
+
+          .sub-text {
+            margin: 40px auto 30px auto;
+            width: 90%;
             display: flex;
-            flex-direction: column-reverse;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-evenly;
 
-            .image{
-              margin: 10px auto;
-              width: 90%;
-            }
+            .approach-container {
+              width: 25%;
+              display: flex;
+              flex-direction: column-reverse;
+              justify-content: center;
 
-            .approach-text{
-              font-family: 'Bw Modelica Medium', serif;
-              text-align: center;
-              font-size: 18px;
-              word-spacing: 1.5px;
-              letter-spacing: -1px;
-              line-height: 1.1;
-              color: #282828;
+              .image {
+                margin: 10px auto;
+                width: 90%;
+              }
+
+              .approach-text {
+                font-family: 'Bw Modelica Medium', serif;
+                text-align: center;
+                font-size: 18px;
+                word-spacing: 1.5px;
+                letter-spacing: -1px;
+                line-height: 1.1;
+                color: #282828;
+              }
             }
           }
         }
       }
-    }
 
-    .row-b {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-self: center;
-      width: 100%;
-      border-radius: 30px;
-
-      .card-1{
+      .row-b {
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        background-color: #ffffff;
-        box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: center;
+        width: 100%;
+        border-radius: 30px;
 
-        .image{
-          margin: 30px auto 0 auto;
-          height: 50%;
-          width: 80%;
+        .card-1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          background-color: #ffffff;
+          box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
+
+          .image {
+            margin: 30px auto 0 auto;
+            height: 50%;
+            width: 80%;
+          }
+
+          .text {
+            height: 50%;
+            padding: 5px 40px 40px 40px;
+            font-family: 'Bw Modelica ExtraBold', serif;
+            font-size: 50px;
+            word-spacing: 1.5px;
+            letter-spacing: -1.5px;
+            line-height: 1.2;
+            color: #282828;
+          }
         }
 
-        .text{
-          height: 50%;
-          padding: 5px 40px 40px 40px;
-          font-family: 'Bw Modelica ExtraBold', serif;
-          font-size: 50px;
-          word-spacing: 1.5px;
-          letter-spacing: -1.5px;
-          line-height: 1.2;
-          color: #282828;
+        .card-2 {
+          display: flex;
+          flex-direction: column;
+          background-color: #ffffff;
+          box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
+
+          .text {
+            text-align: right;
+            height: 40%;
+            padding: 40px 40px 0 40px;
+            font-family: 'Bw Modelica ExtraBold', serif;
+            font-size: 54px;
+            word-spacing: 1.5px;
+            letter-spacing: -1.8px;
+            line-height: 1.1;
+            color: #282828;
+          }
+
+          .image {
+            margin: 0 auto;
+            height: 80%;
+            width: 100%
+          }
         }
       }
-      .card-2{
+
+      .row-c {
         display: flex;
-        flex-direction: column;
-        background-color: #ffffff;
-        box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
+        align-self: center;
+        width: 100%;
+        margin: 20px 0;
 
-        .text{
-          text-align: right;
-          height: 40%;
-          padding: 40px 40px 0 40px;
-          font-family: 'Bw Modelica ExtraBold', serif;
-          font-size: 54px;
-          word-spacing: 1.5px;
-          letter-spacing: -1.8px;
-          line-height: 1.1;
-          color: #282828;
-        }
+        .card-3 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background-color: #ffffff;
+          box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.15);
 
-        .image{
-          margin: 0 auto;
-          height: 80%;
-          width: 100%
+          .image {
+            margin: 0 auto;
+            height: 40%;
+            width: 40%;
+          }
+
+          .text {
+            height: fit-content;
+            text-align: center;
+            font-family: 'Bw Modelica ExtraBold', serif;
+            padding: 40px 60px 0 60px;
+            font-size: 60px;
+            margin: 0 auto;
+            width: 75%;
+            word-spacing: 1.5px;
+            letter-spacing: -1.8px;
+            line-height: 1.1;
+            color: #282828;
+          }
+
+          .sub-text {
+            margin-top: 15px;
+            text-align: center;
+            align-self: center;
+            width: 65%;
+            font-family: 'Bw Modelica Regular', serif;
+            font-size: 17px;
+            word-spacing: 1.5px;
+            letter-spacing: -1.2px;
+            color: #7e7e7e;
+          }
         }
       }
-    }
-    .row-c {
-      display: flex;
-      align-self: center;
-      width: 100%;
-      margin: 20px 0;
 
-      .card-3{
+      .row-d {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #ffffff;
-        box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.15);
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: center;
+        width: 100%;
+        border-radius: 30px;
 
-        .image{
-          margin: 0 auto;
-          height: 40%;
-          width: 40%;
-        }
-        .text{
-          height: fit-content;
-          text-align: center;
-          font-family: 'Bw Modelica ExtraBold', serif;
-          padding: 40px 60px 0 60px;
-          font-size: 60px;
-          margin: 0 auto;
-          width: 75%;
-          word-spacing: 1.5px;
-          letter-spacing: -1.8px;
-          line-height: 1.1;
-          color: #282828;
-        }
-        .sub-text{
-          margin-top: 15px;
-          text-align: center;
-          align-self: center;
-          width: 65%;
-          font-family: 'Bw Modelica Regular', serif;
-          font-size: 17px;
-          word-spacing: 1.5px;
-          letter-spacing: -1.2px;
-          color: #7e7e7e;
-        }
-      }
-    }
-    .row-d {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-self: center;
-      width: 100%;
-      border-radius: 30px;
+        .card-4 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          background-color: #ffffff;
+          box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
 
-      .card-4{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        background-color: #ffffff;
-        box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
+          .text {
+            text-align: center;
+            padding: 40px 40px 0 40px;
+            font-family: 'Bw Modelica ExtraBold', serif;
+            font-size: 50px;
+            word-spacing: 1.5px;
+            letter-spacing: -1.6px;
+            line-height: 1.1;
+            color: #282828;
+          }
 
-        .text{
-          text-align: center;
-          padding: 40px 40px 0 40px;
-          font-family: 'Bw Modelica ExtraBold', serif;
-          font-size: 50px;
-          word-spacing: 1.5px;
-          letter-spacing: -1.6px;
-          line-height: 1.1;
-          color: #282828;
-        }
-        .image{
-          margin: 0 auto;
-          height: 60%;
-          width: 100%;
-        }
-        .sub-text{
-          text-align: center;
-          padding: 15px 40px 40px 40px;
-          font-family: 'Bw Modelica Regular', serif;
-          font-size: 18px;
-          word-spacing: 1.5px;
-          letter-spacing: -1px;
-          line-height: 1.5;
-          color: #606060;
-        }
-      }
-      .card-5{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        background-color: #ffffff;
-        box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
+          .image {
+            margin: 0 auto;
+            height: 60%;
+            width: 100%;
+          }
 
-        .image{
-          margin: 30px auto 0 auto;
-          height: 50%;
-          width: 80%;
+          .sub-text {
+            text-align: center;
+            padding: 15px 40px 40px 40px;
+            font-family: 'Bw Modelica Regular', serif;
+            font-size: 18px;
+            word-spacing: 1.5px;
+            letter-spacing: -1px;
+            line-height: 1.5;
+            color: #606060;
+          }
         }
 
-        .text{
-          padding: 0 40px 15px 40px;
-          font-family: 'Bw Modelica ExtraBold', serif;
-          font-size: 40px;
-          word-spacing: 1.5px;
-          letter-spacing: -1.5px;
-          line-height: 1.1;
-          color: #282828;
-        }
-        .sub-text{
-          padding: 0 40px 40px 40px;
-          width: 70%;
-          font-family: 'Bw Modelica Regular', serif;
-          font-size: 16px;
-          word-spacing: 1.5px;
-          letter-spacing: -1px;
-          line-height: 1.5;
-          color: #606060;
+        .card-5 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          background-color: #ffffff;
+          box-shadow: 0 8px 32px 0 rgba(105, 109, 165, 0.1);
+
+          .image {
+            margin: 30px auto 0 auto;
+            height: 50%;
+            width: 80%;
+          }
+
+          .text {
+            padding: 0 40px 15px 40px;
+            font-family: 'Bw Modelica ExtraBold', serif;
+            font-size: 40px;
+            word-spacing: 1.5px;
+            letter-spacing: -1.5px;
+            line-height: 1.1;
+            color: #282828;
+          }
+
+          .sub-text {
+            padding: 0 40px 40px 40px;
+            width: 70%;
+            font-family: 'Bw Modelica Regular', serif;
+            font-size: 16px;
+            word-spacing: 1.5px;
+            letter-spacing: -1px;
+            line-height: 1.5;
+            color: #606060;
+          }
         }
       }
     }
   }
-}
 
+}
 </style>

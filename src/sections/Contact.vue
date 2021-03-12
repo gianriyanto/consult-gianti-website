@@ -40,81 +40,85 @@ export default {
 
 <style lang="scss" scoped>
 
-#Contact {
-  height: 70vh;
+@media only screen and (min-width: 769px) {
 
-  .content-wrapper{
-    padding-top: 300px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 75vw;
+  #Contact {
+    height: 70vh;
 
-    .header-container{
+    .content-wrapper {
+      padding-top: 300px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      text-align: center;
+      margin: auto;
+      width: 75vw;
 
-      .pre-header-container {
-        font-family: 'Gilroy Bold', serif;
-        font-size: 65px;
-        word-spacing: 1.5px;
-        letter-spacing: -1.5px;
-        line-height: 1.2;
-        color: #282828;
+      .header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
 
-        .underline{
-          border-bottom: 2px solid currentColor;
-          cursor: pointer;
-          transition: all 0.3s ease-in-out;
+        .pre-header-container {
+          font-family: 'Gilroy Bold', serif;
+          font-size: 65px;
+          word-spacing: 1.5px;
+          letter-spacing: -1.5px;
+          line-height: 1.2;
+          color: #282828;
 
-          &:hover{
-            opacity: 0.6;
+          .underline {
+            border-bottom: 2px solid currentColor;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              opacity: 0.6;
+            }
           }
         }
       }
-    }
-    .button-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      width: 41%;
-      padding-top: 30px;
-      align-self: center;
-      height: 53px;
 
-      .my-card-button {
-        width: 180px;
-        border: thin solid black;
-        background: rgb(28, 25, 25);
-        backdrop-filter: blur(20.0px);
-        -webkit-backdrop-filter: blur(20.0px);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
-        border-radius: 30px;
+      .button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 41%;
+        padding-top: 30px;
+        align-self: center;
+        height: 53px;
 
-        .button-label {
-          font-family: "Gilroy SemiBold", serif;
-          font-size: 16px;
-          margin: auto;
-          color: white;
+        .my-card-button {
+          width: 180px;
+          border: thin solid black;
+          background: rgb(28, 25, 25);
+          backdrop-filter: blur(20.0px);
+          -webkit-backdrop-filter: blur(20.0px);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+          border-radius: 30px;
+
+          .button-label {
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 16px;
+            margin: auto;
+            color: white;
+          }
         }
-      }
 
-      .contact-button {
-        width: 180px;
-        border: thin solid black;
-        background: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(20.0px);
-        -webkit-backdrop-filter: blur(20.0px);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
-        border-radius: 30px;
+        .contact-button {
+          width: 180px;
+          border: thin solid black;
+          background: rgba(255, 255, 255, 0.2);
+          backdrop-filter: blur(20.0px);
+          -webkit-backdrop-filter: blur(20.0px);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+          border-radius: 30px;
 
-        .button-label {
-          font-family: "Gilroy SemiBold", serif;
-          font-size: 16px;
-          margin: auto;
-          color: black;
+          .button-label {
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 16px;
+            margin: auto;
+            color: black;
+          }
         }
       }
     }

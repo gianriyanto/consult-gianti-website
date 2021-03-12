@@ -43,29 +43,32 @@ export default {
 
 <style lang="scss" scoped>
 
-#SocialLinks{
-  display: flex;
-  flex-direction: row;
-  height: 100px;
-  align-items: center;
+@media only screen and (min-width: 769px) {
 
-  .link-container{
-    border: thin solid #1f1f1f;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    margin-right: 13px;
+  #SocialLinks {
     display: flex;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
 
-    &:hover{
-      opacity: 0.5;
-    }
+    .link-container {
+      border: thin solid #1f1f1f;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      margin-right: 13px;
+      display: flex;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
 
-    .icon{
-      color: black;
-      margin: auto;
+      &:hover {
+        opacity: 0.5;
+      }
+
+      .icon {
+        color: black;
+        margin: auto;
+      }
     }
   }
 }
