@@ -30,7 +30,7 @@
       <button class="get-started-button">
         <span class="button-label"
               v-scroll-to="{ el: '#GetStarted', easing: [.2, .80, .30, 1],duration: 1500}">
-          Let's get started
+          Get started
         </span>
       </button>
     </div>
@@ -139,7 +139,7 @@ export default {
         background-color: #2b2b2b;
         border: thin solid black;
         border-radius: 30px;
-        width: 130px;
+        width: 140px;
         margin-right: 15px;
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
 

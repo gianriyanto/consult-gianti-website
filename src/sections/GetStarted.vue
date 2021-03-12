@@ -36,7 +36,7 @@ export default {
 @media only screen and (min-width: 769px) {
 
   #GetStarted{
-    height: 55vh;
+    height: 80vh;
 
     .content-wrapper {
       display: flex;
@@ -81,7 +81,7 @@ export default {
         }
       }
       #Typeform{
-        padding-top: 60px;
+        padding-top: 20px;
       }
     }
   }

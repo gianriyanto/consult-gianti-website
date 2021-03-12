@@ -66,7 +66,7 @@ export default {
   flex-direction: row;
   justify-content: center;
   font-size: 19px;
-  width: 250px;
+  width: 290px;
   min-width: fit-content;
 
   .input-editing{

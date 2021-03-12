@@ -51,7 +51,6 @@ export default {
       width: 45vw;
 
       .header-container {
-        padding-top: 200px;
         display: flex;
         flex-direction: column;
         text-align: left;

@@ -34,7 +34,7 @@
           </span>
           <send-icon size="1.2x" class="send-icon"></send-icon>
         </button>
-        <button class="clear-button">
+        <button class="clear-button" @click="clearForm">
           <span class="button-label">
             Clear
           </span>
@@ -54,10 +54,20 @@ export default {
   data() {
     return {
       name: {prompt: 'your name', input: 'your name', edit: false, isValid: false},
-      programs: {prompt: 'interested education program', input: 'interested education program', edit: false, isValid: false},
+      programs: {prompt: 'e.g undergraduate', input: 'e.g undergraduate', edit: false, isValid: false},
       course: {prompt: 'major or course', input: 'major or course', edit: false, isValid: false},
       country: {prompt: 'preferred city or country?', input: 'preferred city or country?', edit: false, isValid: false},
       contact: {prompt: "phone or email", input: "phone or email", edit: false, isValid: false},
+    }
+  },
+  methods: {
+    clearForm: function(){
+      // Clear form button is not working
+      this.name = {prompt: 'your name', input: 'your name', edit: false, isValid: false};
+      this.programs = {prompt: 'e.g undergraduate', input: 'e.g undergraduate', edit: false, isValid: false};
+      this.course = {prompt: 'major or course', input: 'major or course', edit: false, isValid: false};
+      this.country = {prompt: 'preferred city or country?', input: 'preferred city or country?', edit: false, isValid: false};
+      this.contact = {prompt: "phone or email", input: "phone or email", edit: false, isValid: false};
     }
   }
 }
@@ -98,14 +108,14 @@ export default {
       display: flex;
       flex-direction: row;
       text-align: left;
-      height: 41px;
+      height: 45px;
 
       .submit-button {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 150px;
+        width: 160px;
         border: thin solid black;
         background-color: #2b2b2b;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
