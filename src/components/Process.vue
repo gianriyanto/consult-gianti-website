@@ -24,19 +24,19 @@ export default {
       process: [
         {
           "process": "Discovery",
-          "description": "Discovery Process description",
+          "description": "Deep exploration of your talents, skills, and potential in order to plan the perfect education and experience.",
         },
         {
           "process": "Design",
-          "description": "Design Process description",
+          "description": "Collaborative build a carefully designed education plan tailored for you and your needs.",
         },
         {
           "process": "Development",
-          "description": "Development Process description",
+          "description": "Everyone learns and grows differently. Your needs and passion is at the heart of every decision.",
         },
         {
           "process": "Delivery",
-          "description": "Delivery Process description",
+          "description": "Deliver end-to-end support and service to ensure your education journey is progressing seamlessly",
         },
       ]
     }
@@ -58,6 +58,7 @@ export default {
       .process-container {
         display: flex;
         flex-direction: column;
+        width: 21%;
 
         .process-step {
           margin-left: 2px;
@@ -70,7 +71,7 @@ export default {
           .number {
             margin: auto;
             font-family: 'Bw Modelica Medium', serif;
-            font-size: 15px;
+            font-size: 16px;
             color: white;
           }
 
@@ -79,19 +80,20 @@ export default {
         .process-header {
           margin-top: 30px;
           font-family: 'Gilroy Bold', serif;
-          font-size: 25px;
+          font-size: 22px;
           word-spacing: 1.8px;
-          letter-spacing: -1.3px;
+          letter-spacing: -1.1px;
           color: #1f1f1f;
         }
 
         .process-body {
           margin-top: 20px;
-          font-family: 'Gilroy Regular', serif;
-          font-size: 15px;
+          font-family: 'Bw Modelica Light', serif;
+          font-size: 13px;
           word-spacing: 1.8px;
-          letter-spacing: -0.8px;
-          color: #1f1f1f;
+          letter-spacing: -0.7px;
+          line-height: 1.6;
+          color: #000000;
         }
       }
     }
