@@ -21,7 +21,7 @@ export default {
 .canvas{
   display: flex;
   position: absolute;
-  height: 75vh;
+  height: 80vh;
   width: 100%;
   z-index: -10;
   overflow-x: hidden;

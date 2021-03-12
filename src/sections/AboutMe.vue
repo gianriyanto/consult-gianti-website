@@ -1,6 +1,5 @@
 <template>
   <section id="AboutMe">
-    <blurry-background3/>
     <div class="content-wrapper">
       <div class="header-container">
         <span class="pre-header-container">
@@ -28,12 +27,11 @@
 </template>
 
 <script>
-import BlurryBackground3 from "@/background/BlurryBackground3";
 import HowIWork from "@/components/HowIWork";
 
 export default {
   name: "AboutMe",
-  components: {HowIWork, BlurryBackground3}
+  components: {HowIWork}
 }
 </script>
 
@@ -42,12 +40,13 @@ export default {
 @media only screen and (min-width: 769px) {
 
   #AboutMe {
-    height: 140vh;
+    height: fit-content;
 
     .content-wrapper {
       display: flex;
       flex-direction: column;
       margin: 0 auto;
+      padding-top: 200px;
       width: 45vw;
 
       .header-container {

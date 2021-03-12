@@ -1,6 +1,5 @@
 <template>
   <section id="Landing">
-    <blurry-background/>
     <TopBar/>
     <div class="content-wrapper">
       <div class="header-wrapper">
@@ -19,12 +18,10 @@ import TopBar from "@/components/TopBar";
 import Overview from "@/components/Overview";
 import SocialLinks from "@/components/SocialLinks";
 import LandingHeader from "@/components/LandingHeader";
-import BlurryBackground from "@/background/BlurryBackground";
 
 export default {
   name: "Landing",
   components: {
-    BlurryBackground,
     LandingHeader,
     SocialLinks,
     Overview,
@@ -55,10 +52,9 @@ export default {
     .content-wrapper{
       display: flex;
       flex-direction: column;
+      height: 100%;
       width: 75vw;
-      height: 95vh;
       align-self: center;
-      margin: auto;
 
       .header-wrapper{
         display: flex;

@@ -1,6 +1,5 @@
 <template>
   <section id="GetStarted">
-    <blurry-background2/>
     <div class="content-wrapper">
       <div class="header-container">
         <span class="pre-header-container">
@@ -20,12 +19,10 @@
 
 <script>
 import Typeform from "@/components/Typeform";
-import BlurryBackground2 from "@/background/BlurryBackground2";
 
 export default {
   name: "GetStarted",
   components: {
-    BlurryBackground2,
     Typeform
   }
 }
@@ -36,13 +33,15 @@ export default {
 @media only screen and (min-width: 769px) {
 
   #GetStarted{
-    height: 80vh;
+    height: fit-content;
+    padding-top: 50px;
 
     .content-wrapper {
       display: flex;
       flex-direction: column;
       margin: 0 auto;
       width: 70vw;
+      min-width: 990px;
 
       .header-container {
         padding-top: 150px;

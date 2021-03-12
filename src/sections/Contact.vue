@@ -43,10 +43,10 @@ export default {
 @media only screen and (min-width: 769px) {
 
   #Contact {
-    height: 70vh;
+    display: flex;
+    height: 80vh;
 
     .content-wrapper {
-      padding-top: 300px;
       display: flex;
       flex-direction: column;
       margin: auto;
@@ -60,7 +60,7 @@ export default {
 
         .pre-header-container {
           font-family: 'Gilroy Bold', serif;
-          font-size: 65px;
+          font-size: 60px;
           word-spacing: 1.5px;
           letter-spacing: -1.5px;
           line-height: 1.2;
@@ -83,9 +83,9 @@ export default {
         flex-direction: row;
         justify-content: space-evenly;
         width: 41%;
-        padding-top: 30px;
+        padding-top: 60px;
         align-self: center;
-        height: 53px;
+        height: 50px;
 
         .my-card-button {
           width: 180px;

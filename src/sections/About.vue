@@ -110,7 +110,7 @@ export default {
   #About {
     display: flex;
     height: fit-content;
-    margin-top: 150px;
+    padding-top: 150px;
 
     .content-wrapper {
       display: flex;
