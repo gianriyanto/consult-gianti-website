@@ -65,14 +65,14 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 19px;
-  width: 290px;
+  font-size: 17px;
+  width: 280px;
   min-width: fit-content;
 
   .input-editing{
     text-align: center;
     font-family: "Bw Modelica Medium", serif;
-    font-size: 19px;
+    font-size: 17px;
     color: #5f5f5f;
     width: 100%;
     border: transparent;

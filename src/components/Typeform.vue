@@ -92,7 +92,7 @@ export default {
 
     .font-style{
       font-family: "Bw Modelica Medium", serif;
-      font-size: 19px;
+      font-size: 17px;
       color: #1f1f1f;
       padding: 3px 0 0 0;
     }

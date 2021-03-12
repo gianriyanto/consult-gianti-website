@@ -117,11 +117,13 @@ export default {
       flex-direction: column;
       height: fit-content;
       max-width: 850px;
+      min-width: 768px;
       width: 55vw;
       margin: 0 auto;
 
       .horizontal {
         width: 100%;
+        min-height: 500px;
         height: 65vh;
         max-height: 500px;
         border-radius: 25px;
@@ -129,8 +131,10 @@ export default {
 
       .vertical {
         width: 49%;
+        min-width: 377px;
         height: 70vh;
         max-height: 700px;
+        min-height: 580px;
         border-radius: 25px;
       }
 
