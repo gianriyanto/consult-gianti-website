@@ -66,7 +66,7 @@ export default {
           border-radius: 50%;
           width: 45px;
           height: 45px;
-          background-color: #343434;
+          background-image: linear-gradient(to top right, #292929, #4f4f4f);
           box-shadow: 0 8px 32px 0 rgba(99, 100, 114, 0.3);
 
           .number {
