@@ -13,6 +13,10 @@
       <span class="circle-9"/>
       <span class="circle-10"/>
       <span class="circle-11"/>
+      <span class="circle-12"/>
+      <span class="circle-13"/>
+      <span class="circle-14"/>
+      <span class="circle-15"/>
     </div>
   </div>
 </template>
@@ -28,7 +32,7 @@ export default {
 .canvas{
   display: flex;
   position: absolute;
-  height: 400vh;
+  height: 600vh;
   width: 100vw;
   z-index: -1;
   overflow-x: hidden;
@@ -148,10 +152,50 @@ export default {
     z-index: -2;
     display: flex;
     position: absolute;
-    transform: translate(-5vw, 300vh);
-    background-color: #f1be87;
+    transform: translate(-5vw, 280vh);
+    background-color: #fcd6ae;
     height: 550px;
     width: 550px;
+    border-radius: 50%;
+  }
+  .circle-12{
+    z-index: -2;
+    display: flex;
+    position: absolute;
+    transform: translate(45vw, 350vh);
+    background-color: #9af6e4;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+  }
+  .circle-13{
+    z-index: -2;
+    display: flex;
+    position: absolute;
+    transform: translate(20vw, 400vh);
+    background-color: #fcf2ba;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+  }
+  .circle-14{
+    z-index: -2;
+    display: flex;
+    position: absolute;
+    transform: translate(40vw, 470vh);
+    background-color: #bbffbe;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+  }
+  .circle-15{
+    z-index: -2;
+    display: flex;
+    position: absolute;
+    transform: translate(20vw, 500vh);
+    background-color: #b8d9fc;
+    height: 600px;
+    width: 600px;
     border-radius: 50%;
   }
 }

@@ -67,6 +67,7 @@ export default {
           width: 45px;
           height: 45px;
           background-color: #343434;
+          box-shadow: 0 8px 32px 0 rgba(99, 100, 114, 0.3);
 
           .number {
             margin: auto;
@@ -79,20 +80,20 @@ export default {
 
         .process-header {
           margin-top: 30px;
-          font-family: 'Gilroy Bold', serif;
+          font-family: 'Gilroy Regular', serif;
           font-size: 22px;
           word-spacing: 1.8px;
-          letter-spacing: -1.1px;
+          letter-spacing: -0.6px;
           color: #1f1f1f;
         }
 
         .process-body {
           margin-top: 20px;
           font-family: 'Bw Modelica Light', serif;
-          font-size: 13px;
+          font-size: 14px;
           word-spacing: 1.8px;
           letter-spacing: -0.7px;
-          line-height: 1.6;
+          line-height: 1.7;
           color: #000000;
         }
       }
