@@ -36,7 +36,7 @@ export default {
         },
         {
           "process": "Delivery",
-          "description": "Deliver end-to-end consultation and counselling to ensure your education journey is progressing seamlessly",
+          "description": "End-to-end service and counselling to ensure the entire process and experience is progressing seamlessly.",
         },
       ]
     }
