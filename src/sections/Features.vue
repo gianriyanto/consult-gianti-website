@@ -72,12 +72,12 @@
         <span class="card-4 vertical">
           <span class="text">
             Hassle free process.
-          </span>s
+          </span>
           <span class="image">
             <img src="@/assets/images/process.svg" alt ="">
           </span>
           <span class="sub-text">
-            Planning your studies abroad does not have to be complicated.
+            Planning your studies abroad should not be complicated. I'll handle all the fuss so that you focus on what matters.
           </span>
         </span>
         <span class="card-5 vertical">

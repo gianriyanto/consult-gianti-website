@@ -1,15 +1,12 @@
 <template>
   <div id="TopNav">
     <div class="content-wrapper">
-      <span class="logo"/>
-      <!-- #Aspectama Logo#
       <span class="logo-container">
-        <img class="image" src="@/assets/logo/AspectamaLogo.png">
+        <img class="image" src="@/assets/logo/AspectamaLogoBlack.png">
       </span>
-      -->
       <button class="contact-button">
         <span class="button-label">
-          Get in touch
+          Take my card
         </span>
       </button>
     </div>
@@ -53,7 +50,6 @@ export default {
           opacity: 0.7;
         }
       }
-      /*
       .logo-container{
         height: 100%;
         cursor: pointer;
@@ -68,7 +64,6 @@ export default {
           opacity: 0.7;
         }
       }
-  */
       .contact-button {
         align-self: center;
         width: 130px;

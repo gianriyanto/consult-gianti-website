@@ -22,7 +22,7 @@
     </div>
     <div class="button-container">
       <button :class="buttonStyle">
-        <font-awesome-icon class="whatsapp-icon" :icon="['fab', 'whatsapp']" />
+        <font-awesome-icon class="whatsapp-icon" :icon="['fab', 'whatsapp']" v-on:click="goToSite('https://wa.me/+6281368681214')"/>
         <span class="button-label">
           Say hi!
         </span>
@@ -53,6 +53,9 @@ export default {
       } else {
         this.buttonStyle = 'normal-button';
       }
+    },
+    goToSite(url) {
+      window.open(url, '_blank');
     }
   }
 }

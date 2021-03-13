@@ -21,20 +21,54 @@
           </span>
         </button>
         <button class="contact-button">
-          <span class="button-label">
-            Contact
+          <span class="button-label" v-scroll-to="{ el: '#GetStarted', easing: [.2, .80, .30, 1],duration: 1500}">
+            Get in touch
           </span>
         </button>
       </div>
+    </div>
+    <div class="social-links-container">
+      <a class="link-container"
+         v-on:click="goToSite('http://aspectamaalsut.co.id')">
+        <globe-icon size="1.5x" class="icon"></globe-icon>
+      </a>
+      <a class="link-container"
+         v-on:click="goToSite('https://www.instagram.com/aspectama/?hl=en')">
+        <instagram-icon size="1.5x" class="icon"></instagram-icon>
+      </a>
+      <a class="link-container"
+         v-on:click="goToSite('https://www.facebook.com/AspectamaStudentAdvisor/')">
+        <facebook-icon size="1.5x" class="icon"></facebook-icon>
+      </a>
+      <a class="link-container"
+         v-on:click="goToSite('https://goo.gl/maps/9iiTnMrh5BNJEuMT7')">
+        <MapIcon size="1.5x" class="icon"></MapIcon>
+      </a>
     </div>
   </section>
 </template>
 
 <script>
 import BlurryBackground5 from "@/background/BlurryBackground5";
+import { InstagramIcon } from 'vue-feather-icons'
+import { FacebookIcon } from 'vue-feather-icons'
+import { GlobeIcon } from 'vue-feather-icons'
+import { MapIcon } from 'vue-feather-icons'
+
 export default {
   name: "Contact",
-  components: {BlurryBackground5}
+  components: {
+    BlurryBackground5,
+    FacebookIcon,
+    InstagramIcon,
+    GlobeIcon,
+    MapIcon
+  },
+  methods: {
+    goToSite(url) {
+      window.open(url, '_blank');
+    }
+  },
 }
 </script>
 
@@ -44,6 +78,7 @@ export default {
 
   #Contact {
     display: flex;
+    flex-direction: column;
     height: 80vh;
 
     .content-wrapper {
@@ -85,7 +120,7 @@ export default {
         width: 41%;
         padding-top: 60px;
         align-self: center;
-        height: 50px;
+        height: 51px;
 
         .my-card-button {
           width: 180px;
@@ -119,6 +154,34 @@ export default {
             margin: auto;
             color: black;
           }
+        }
+      }
+    }
+
+    .social-links-container{
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      height: 100px;
+      align-items: center;
+      width: 90vw;
+
+      .link-container {
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        margin-right: 7px;
+        display: flex;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+          opacity: 0.5;
+        }
+
+        .icon {
+          color: black;
+          margin: auto;
         }
       }
     }
