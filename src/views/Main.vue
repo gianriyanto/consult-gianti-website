@@ -5,7 +5,7 @@
     <Landing/>
     <GetStarted/>
     <AboutMe/>
-    <About/>
+    <Features/>
     <Contact/>
   </div>
 </template>
@@ -14,7 +14,7 @@
 import Landing from "@/sections/Landing";
 import TopNav from "@/nav/TopNav";
 import GetStarted from "@/sections/GetStarted";
-import About from "@/sections/About";
+import Features from "@/sections/Features";
 import Contact from "@/sections/Contact";
 import AboutMe from "@/sections/AboutMe";
 import BlurryBackground from "@/background/BlurryBackground";
@@ -25,7 +25,7 @@ export default {
     BlurryBackground,
     AboutMe,
     Contact,
-    About,
+    Features,
     TopNav,
     Landing,
     GetStarted,

@@ -1,5 +1,5 @@
 <template>
-  <section id="About">
+  <section id="Features">
     <div class="content-wrapper">
       <div class="row-a">
         <span class="card-0 horizontal">
@@ -61,18 +61,18 @@
             <img src="@/assets/images/world_map.svg" alt ="">
           </span>
           <span class="text">
-            Explore universities around the world
+            Explore universities around the world.
           </span>
           <span class="sub-text">
-            Matchmaking the right course and university that unlocks your potential.
+            Matchmaking the perfect course, university. and learning experiences that enables your talent potential.
           </span>
         </span>
       </div>
       <div class="row-d">
         <span class="card-4 vertical">
           <span class="text">
-            Hassle free process
-          </span>
+            Hassle free process.
+          </span>s
           <span class="image">
             <img src="@/assets/images/process.svg" alt ="">
           </span>
@@ -85,7 +85,7 @@
             <img src="@/assets/images/isometric.svg" alt ="">
           </span>
           <span class="text">
-            Tailored consultations service.
+            Tailored consultation service.
           </span>
           <span class="sub-text">
             Everyone is different and there is no one size fits all solution to planning your education.
@@ -99,7 +99,7 @@
 
 <script>
 export default {
-  name: "About"
+  name: "Features"
 }
 </script>
 
@@ -107,7 +107,7 @@ export default {
 
 @media only screen and (min-width: 769px) {
 
-  #About {
+  #Features {
     display: flex;
     height: fit-content;
     padding-top: 150px;
@@ -153,12 +153,12 @@ export default {
 
           .text-header {
             margin: 0px auto 10px auto;
-            font-family: 'Bw Modelica Bold', serif;
-            font-size: 60px;
+            font-family: 'Bw Modelica ExtraBold', serif;
+            font-size: 56px;
             word-spacing: 1.5px;
             letter-spacing: -1.8px;
             line-height: 1.1;
-            color: black;
+            color: #282828;
           }
 
           .text {
@@ -305,8 +305,9 @@ export default {
             font-family: 'Bw Modelica Regular', serif;
             font-size: 17px;
             word-spacing: 1.5px;
-            letter-spacing: -1.2px;
-            color: #7e7e7e;
+            letter-spacing: -1px;
+            line-height: 1.5;
+            color: #484848;
           }
         }
       }
@@ -347,11 +348,11 @@ export default {
             text-align: center;
             padding: 15px 40px 40px 40px;
             font-family: 'Bw Modelica Regular', serif;
-            font-size: 18px;
+            font-size: 17px;
             word-spacing: 1.5px;
             letter-spacing: -1px;
             line-height: 1.5;
-            color: #606060;
+            color: #484848;
           }
         }
 
@@ -382,11 +383,11 @@ export default {
             padding: 0 40px 40px 40px;
             width: 70%;
             font-family: 'Bw Modelica Regular', serif;
-            font-size: 16px;
+            font-size: 17px;
             word-spacing: 1.5px;
             letter-spacing: -1px;
             line-height: 1.5;
-            color: #606060;
+            color: #484848;
           }
         }
       }

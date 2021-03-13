@@ -24,19 +24,19 @@ export default {
       process: [
         {
           "process": "Discovery",
-          "description": "Deep exploration of your talents, skills, and potential in order to plan the perfect education and experience.",
+          "description": "Deep dive to explore of your talents, skills, and potential to plan your perfect education and experience.",
         },
         {
           "process": "Design",
-          "description": "Collaborative build a carefully designed education plan tailored for you and your needs.",
+          "description": "Work closely with clients to design long-term plans, strategies, and arrangements tailored for your needs.",
         },
         {
           "process": "Development",
-          "description": "Everyone learns and grows differently. Your needs and passion is at the heart of every decision.",
+          "description": "Everyone learns and grows differently. Your passion and potential is at the heart of  every decision we make.",
         },
         {
           "process": "Delivery",
-          "description": "Deliver end-to-end support and service to ensure your education journey is progressing seamlessly",
+          "description": "Deliver end-to-end consultation and counselling to ensure your education journey is progressing seamlessly",
         },
       ]
     }
