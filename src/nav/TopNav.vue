@@ -4,6 +4,9 @@
       <span class="logo-container">
         <img class="image" src="@/assets/logo/AspectamaLogoBlack.png">
       </span>
+      <span class="get-started-button">
+        <button class="button-label" v-scroll-to="{ el: '#GetStarted', easing: [.2, .80, .30, 1],duration: 1500}"> Get started </button>
+      </span>
       <button class="contact-button">
         <span class="button-label">
           Take my card
@@ -64,10 +67,24 @@ export default {
           opacity: 0.7;
         }
       }
+      .get-started-button{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: 30px;
+
+        .button-label{
+          background-color: transparent;
+          font-family: "Bw Modelica Medium", serif;
+          font-size: 15px;
+          color: #1f1f1f
+        }
+      }
       .contact-button {
         align-self: center;
         width: 130px;
-        height: 41px;
+        height: 43px;
         border: thin solid #1f1f1f;
         background-image: linear-gradient(to left, #1f1f1f, #262626);
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );

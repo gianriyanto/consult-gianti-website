@@ -74,6 +74,7 @@ export default {
 
         #SocialLinks {
           margin-top: auto;
+          padding-bottom: 20px;
         }
         #Overview{
           margin-top: auto;
