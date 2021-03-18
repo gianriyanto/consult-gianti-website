@@ -53,7 +53,7 @@ export default {
     display: flex;
     position: absolute;
     transform: translate(65vw, 0);
-    background-color: #81d2ff;
+    background-color: #77bade;
     height: 500px;
     width: 500px;
     border-radius: 50%;
@@ -73,7 +73,7 @@ export default {
     display: flex;
     position: absolute;
     transform: translate(15vw, 40vh);
-    background-color: #fffba6;
+    background-color: #90d5f5;
     height: 450px;
     width: 450px;
     border-radius: 50%;
@@ -83,8 +83,8 @@ export default {
     display: flex;
     position: absolute;
     transform: translate(-15vw, 65vh);
-    background-color: #76d9ba;
-    height: 550px;
+    background-color: #ff804e;
+    height: 650px;
     width: 550px;
     border-radius: 50%;
   }
@@ -92,9 +92,9 @@ export default {
     z-index: -3;
     display: flex;
     position: absolute;
-    transform: translate(-5vw, 40vh);
-    background-color: #ef946a;
-    height: 450px;
+    transform: translate(-5vw, 44vh);
+    background-color: #8de9ce;
+    height: 600px;
     width: 450px;
     border-radius: 50%;
   }
@@ -113,7 +113,7 @@ export default {
     display: flex;
     position: absolute;
     transform: translate(75vw, 180vh);
-    background-color: #fcbd91;
+    background-color: #f6924e;
     height: 400px;
     width: 400px;
     border-radius: 50%;
@@ -143,7 +143,7 @@ export default {
     display: flex;
     position: absolute;
     transform: translate(75vw, 110vh);
-    background-color: #83d8f1;
+    background-color: #5ad9bb;
     height: 400px;
     width: 400px;
     border-radius: 50%;
@@ -152,8 +152,8 @@ export default {
     z-index: -2;
     display: flex;
     position: absolute;
-    transform: translate(-5vw, 280vh);
-    background-color: #fcd6ae;
+    transform: translate(-5vw, 285vh);
+    background-color: #ff9647;
     height: 550px;
     width: 550px;
     border-radius: 50%;

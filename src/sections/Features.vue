@@ -33,7 +33,7 @@
             The 4D Approach
           </span>
           <span class="text">
-            The 4D approach is a tailored roadmap that allows us to tailor an end to end solution to your educational journey from discovery to delivery.
+            The 4D approach is a framework and methodology that allows us to carefully tailor end-to-end solution to your educational journey from its inception to implementation.
           </span>
         </span>
       </div>
@@ -164,12 +164,12 @@ export default {
           .text {
             text-align: center;
             width: 70%;
-            margin: 0 auto 40px auto;
+            margin: 20px auto 30px auto;
             font-family: 'Bw Modelica Light', serif;
             font-size: 17px;
             word-spacing: 1.5px;
             letter-spacing: -0.8px;
-            line-height: 1.5;
+            line-height: 1.6;
             color: #3e3e3e;
           }
 
@@ -302,7 +302,7 @@ export default {
             text-align: center;
             align-self: center;
             width: 65%;
-            font-family: 'Bw Modelica Regular', serif;
+            font-family: 'Bw Modelica Light', serif;
             font-size: 17px;
             word-spacing: 1.5px;
             letter-spacing: -1px;
@@ -347,8 +347,8 @@ export default {
           .sub-text {
             text-align: center;
             padding: 15px 40px 40px 40px;
-            font-family: 'Bw Modelica Regular', serif;
-            font-size: 17px;
+            font-family: 'Bw Modelica Light', serif;
+            font-size: 15px;
             word-spacing: 1.5px;
             letter-spacing: -1px;
             line-height: 1.5;
@@ -382,8 +382,8 @@ export default {
           .sub-text {
             padding: 0 40px 40px 40px;
             width: 70%;
-            font-family: 'Bw Modelica Regular', serif;
-            font-size: 17px;
+            font-family: 'Bw Modelica Light', serif;
+            font-size: 15px;
             word-spacing: 1.5px;
             letter-spacing: -1px;
             line-height: 1.5;

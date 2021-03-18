@@ -2,7 +2,7 @@
   <div id="TopNav">
     <div class="content-wrapper">
       <span class="logo-container">
-        <img class="image" src="@/assets/logo/AspectamaLogoBlack.png">
+        <img class="image" src="@/assets/logo/AspectamaLogo.png">
       </span>
       <span class="get-started-button">
         <button class="button-label" v-scroll-to="{ el: '#GetStarted', easing: [.2, .80, .30, 1],duration: 1500}"> Get started </button>
@@ -57,14 +57,16 @@ export default {
         height: 100%;
         cursor: pointer;
         transition: all .3s ease-in-out;
+        opacity: 0.8;
 
         .image{
+          padding-top: 5px;
           height: 100%;
           width: auto;
         }
 
         &:hover{
-          opacity: 0.7;
+          opacity: 0.6;
         }
       }
       .get-started-button{
