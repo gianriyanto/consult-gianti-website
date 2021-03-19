@@ -9,12 +9,14 @@
           </span>
         </span>
         <span class="header-text">
-          I build education blueprints from the ground up one person at a time by carefully leveraging your talent, skills, and passion.
+          I bridge clients with the best education experience by transforming your talent and passion into a launch pad for professional success.
         </span>
       </div>
       <div class="body-container">
         <span class="body-text">
-          With over 20 years in the business, I look to solve one problem - simplify your future. I understand that the first-step can be daunting, let alone the entire nitty-gritty process of planning to study overseas. I designed a system and way-of-working to ensure your education experience is seamless and hassle-free so that you can focus on what matters most - to let your passion drive your profession.
+          With over 20 years creating a network of opportunities around the world and navigating through the education system, I look to solve one problem - simplifying your future.
+          The first-steps to applications can be daunting, let alone the tedious amount of paperwork and processes. I designed a methodology and system to ensure your experience is seamless so that you can focus on what truly matters.
+          You’ve got an incredible career ahead of you, my knowledge and expertise in learning ensures that every decision we make together is another step closer to your success.
         </span>
       </div>
       <img class="signature-image" src="@/assets/images/signature.svg" alt ="">
@@ -77,7 +79,7 @@ export default {
         .header-text {
           padding-top: 20px;
           font-family: 'Gilroy Bold', serif;
-          font-size: 44px;
+          font-size: 45px;
           word-spacing: 1.8px;
           letter-spacing: -1.3px;
           line-height: 1.3;
@@ -85,9 +87,12 @@ export default {
         }
       }
       .body-container {
+        display: flex;
+        flex-direction: column;
         padding-top: 35px;
 
         .body-text{
+          padding-top: 15px;
           font-family: 'Bw Modelica Light', serif;
           font-size: 16px;
           word-spacing: 1.5px;

@@ -33,7 +33,7 @@
             The 4D Approach
           </span>
           <span class="text">
-            The 4D approach is a framework and methodology that allows us to carefully tailor end-to-end solution to your educational journey from its inception to implementation.
+            The 4D approach is a framework and methodology that allows us to carefully tailor end-to-end solution to your educational journey from its inception.
           </span>
         </span>
       </div>

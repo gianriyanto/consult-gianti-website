@@ -17,6 +17,8 @@
       <span class="circle-13"/>
       <span class="circle-14"/>
       <span class="circle-15"/>
+      <span class="circle-16"/>
+      <span class="circle-17"/>
     </div>
   </div>
 </template>
@@ -152,10 +154,10 @@ export default {
     z-index: -2;
     display: flex;
     position: absolute;
-    transform: translate(-5vw, 285vh);
-    background-color: #ff9647;
-    height: 550px;
-    width: 550px;
+    transform: translate(-10vw, 290vh);
+    background-color: #fda764;
+    height: 650px;
+    width: 500px;
     border-radius: 50%;
   }
   .circle-12{
@@ -182,9 +184,9 @@ export default {
     z-index: -2;
     display: flex;
     position: absolute;
-    transform: translate(40vw, 470vh);
-    background-color: #bbffbe;
-    height: 500px;
+    transform: translate(50vw, 470vh);
+    background-color: #9fffcd;
+    height: 600px;
     width: 500px;
     border-radius: 50%;
   }
@@ -192,10 +194,30 @@ export default {
     z-index: -2;
     display: flex;
     position: absolute;
-    transform: translate(20vw, 500vh);
-    background-color: #b8d9fc;
-    height: 600px;
+    transform: translate(15vw, 500vh);
+    background-color: #a0ccfa;
+    height: 700px;
     width: 600px;
+    border-radius: 50%;
+  }
+  .circle-16{
+    z-index: -2;
+    display: flex;
+    position: absolute;
+    transform: translate(60vw, 5vh);
+    background-color: #ff9c42;
+    height: 650px;
+    width: 650px;
+    border-radius: 50%;
+  }
+  .circle-17{
+    z-index: -2;
+    display: flex;
+    position: absolute;
+    transform: translate(80vw, -4vh);
+    background-color: #ffe042;
+    height: 550px;
+    width: 550px;
     border-radius: 50%;
   }
 }
