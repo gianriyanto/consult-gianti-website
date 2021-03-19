@@ -24,19 +24,19 @@ export default {
       process: [
         {
           "process": "Discovery",
-          "description": "Deep dive to explore of your talents, skills, and potential to plan your perfect education and experience.",
+          "description": "Deep exploration of your talents, skills, and potential to plan your perfect education experience.",
         },
         {
           "process": "Design",
-          "description": "Work closely with clients to design long-term plans, strategies, and arrangements tailored for your needs.",
+          "description": "Work closely with clients to design long-term plans and decisions tailored to your needs.",
         },
         {
           "process": "Development",
-          "description": "Everyone learns and grows differently. Your passion and potential is at the heart of  every decision we make.",
+          "description": "Everyone learns and grows differently. Your passion is at the heart of every decision we make.",
         },
         {
           "process": "Delivery",
-          "description": "End-to-end service and counselling to ensure the entire process and experience is progressing seamlessly.",
+          "description": "End-to-end service and counselling to ensure the entire process is progressing seamlessly.",
         },
       ]
     }
@@ -84,7 +84,7 @@ export default {
           font-size: 22px;
           word-spacing: 1.8px;
           letter-spacing: -0.6px;
-          color: #1f1f1f;
+          color: #393939;
         }
 
         .process-body {
@@ -93,8 +93,8 @@ export default {
           font-size: 14px;
           word-spacing: 1.8px;
           letter-spacing: -0.7px;
-          line-height: 1.7;
-          color: #000000;
+          line-height: 1.9;
+          color: #515151;
         }
       }
     }
