@@ -60,14 +60,15 @@ export default {
 
 <style lang="scss" scoped>
 
-#InlineInput{
-  font-family: "Bw Modelica Medium", serif;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 17px;
-  width: 280px;
-  min-width: fit-content;
+@media only screen and (min-width: 769px) {
+  #InlineInput {
+    font-family: "Bw Modelica Medium", serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 17px;
+    width: 280px;
+    min-width: fit-content;
 
   .input-editing{
     text-align: center;
@@ -80,26 +81,77 @@ export default {
     background-color: transparent;
   }
 
-  .input-card{
+    .input-card {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .input-has-value-style {
+      color: #61b0e5;
+    }
+
+    .input-no-value-style {
+      color: #b2b3b7;
+      width: fit-content;
+    }
+  }
+  .fade-enter-active {
+    transition: all 0.3s ease-in-out;
+  }
+  .fade-leave-active {
+    transition: all 0.3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #InlineInput {
+    font-family: "Bw Modelica Medium", serif;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    font-size: 16px;
+    width: 100%;
+    min-width: fit-content;
+
+    .input-editing {
+      text-align: left;
+      font-family: "Bw Modelica Medium", serif;
+      font-size: 14px;
+      color: #5f5f5f;
+      width: 100%;
+      border: transparent;
+      outline: transparent;
+      background-color: transparent;
+    }
+
+    .input-card {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    .input-has-value-style {
+      color: #61b0e5;
+      width: 100%;
+    }
+
+    .input-no-value-style {
+      color: #b2b3b7;
+      width: 100%;
+    }
   }
-  .input-has-value-style{
-    color: #61b0e5;
+  .fade-enter-active {
+    transition: all 0.3s ease-in-out;
   }
-  .input-no-value-style{
-    color: #b2b3b7;
-    width: fit-content;
+  .fade-leave-active {
+    transition: all 0.3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
   }
-}
-.fade-enter-active {
-  transition: all 0.3s ease-in-out;
-}
-.fade-leave-active {
-  transition: all 0.3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-.fade-enter, .fade-leave-to{
-  opacity: 0;
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
 }
 
 </style>

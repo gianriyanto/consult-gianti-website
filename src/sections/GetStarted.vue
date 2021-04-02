@@ -87,7 +87,6 @@ export default {
 
 @media only screen and (max-width: 768px){
   #GetStarted{
-    display: none;
     height: fit-content;
     padding-top: 50px;
 
@@ -95,8 +94,7 @@ export default {
       display: flex;
       flex-direction: column;
       margin: 0 auto;
-      width: 70vw;
-      min-width: 990px;
+      width: 70%;
 
       .header-container {
         padding-top: 150px;
@@ -130,7 +128,7 @@ export default {
           font-size: 44px;
           word-spacing: 1.8px;
           letter-spacing: -1.3px;
-          line-height: 1.3;
+          line-height: 1.1;
           color: #1a1a1a;
         }
       }
