@@ -110,29 +110,29 @@ export default {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding-bottom: 50px;
+        padding-bottom: 40px;
 
         .process-step {
           margin-left: 2px;
           display: flex;
           border-radius: 50%;
-          width: 45px;
-          height: 45px;
+          width: 40px;
+          height: 40px;
           background-image: linear-gradient(to top right, #292929, #4f4f4f);
           box-shadow: 0 8px 32px 0 rgba(99, 100, 114, 0.3);
 
           .number {
             margin: auto;
             font-family: 'Bw Modelica Medium', serif;
-            font-size: 18px;
+            font-size: 16px;
             color: white;
           }
         }
 
         .process-header {
-          margin-top: 30px;
+          margin-top: 20px;
           font-family: 'Gilroy Bold', serif;
-          font-size: 30px;
+          font-size: 27px;
           word-spacing: 1.8px;
           letter-spacing: -0.6px;
           color: #393939;
@@ -141,7 +141,7 @@ export default {
         .process-body {
           margin-top: 10px;
           font-family: 'Bw Modelica Regular', serif;
-          font-size: 15px;
+          font-size: 14px;
           word-spacing: 1.8px;
           letter-spacing: -1px;
           line-height: 1.8;

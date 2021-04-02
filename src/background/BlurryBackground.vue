@@ -244,7 +244,7 @@ export default {
   .canvas {
     display: flex;
     position: absolute;
-    height: 700vh;
+    height: 810vh;
     width: 100vw;
     z-index: -1;
     overflow-x: hidden;
@@ -397,8 +397,8 @@ export default {
       display: flex;
       position: absolute;
       transform: translate(20vw, 400vh);
-      background-color: #fcf2ba;
-      height: 600px;
+      background-color: #f3e597;
+      height: 900px;
       width: 600px;
       border-radius: 50%;
     }
@@ -407,9 +407,9 @@ export default {
       z-index: -2;
       display: flex;
       position: absolute;
-      transform: translate(50vw, 470vh);
+      transform: translate(50vw, 580vh);
       background-color: #9fffcd;
-      height: 600px;
+      height: 1000px;
       width: 500px;
       border-radius: 50%;
     }
@@ -418,9 +418,9 @@ export default {
       z-index: -2;
       display: flex;
       position: absolute;
-      transform: translate(15vw, 500vh);
+      transform: translate(3vw, 680vh);
       background-color: #a0ccfa;
-      height: 700px;
+      height: 1000px;
       width: 600px;
       border-radius: 50%;
     }

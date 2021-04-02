@@ -225,7 +225,7 @@ export default {
 
       .pre-header-container {
         font-family: 'Bw Modelica Medium', serif;
-        font-size: 15px;
+        font-size: 17px;
         word-spacing: 1.5px;
         letter-spacing: -0.5px;
         line-height: 1.2;
@@ -242,10 +242,10 @@ export default {
 
       .header-container {
         font-family: 'Bw Modelica Bold', serif;
-        font-size: 33px;
+        font-size: 34px;
         word-spacing: 1.3px;
         letter-spacing: -0.7px;
-        line-height: 1.2;
+        line-height: 1.35;
         color: #474747;
       }
     }
