@@ -88,7 +88,6 @@ export default {
 @media only screen and (max-width: 768px){
   #GetStarted{
     height: fit-content;
-    padding-top: 50px;
 
     .content-wrapper {
       display: flex;
