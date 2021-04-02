@@ -284,7 +284,8 @@ export default {
         justify-content: center;
         height: 40px;
         font-family: "Bw Modelica Light", serif;
-        font-size: 17px;
+        line-height: 1.5;
+        font-size: 14px;
         color: #4a4a4a;
       }
     }
