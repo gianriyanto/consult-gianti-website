@@ -1,5 +1,5 @@
 <template>
-  <div id="Typeform">
+  <div id="Typeform" :key="componentKey">
     <div class="content-wrapper">
       <div class="form_line font-style">
         <span class="font-style">
@@ -28,7 +28,7 @@
         <inline-input class="padding" v-bind:inputData="contact"/>
       </div>
       <div class="button-container">
-        <button class="submit-button">
+        <button class="submit-button" @click="handleSubmit">
           <span class="button-label">
             Send Enquiry
           </span>
@@ -40,6 +40,9 @@
           </span>
         </button>
       </div>
+      <span class="notification">
+        {{ notificationMessage }}
+      </span>
     </div>
   </div>
 </template>
@@ -53,21 +56,48 @@ export default {
   components: {InlineInput, SendIcon},
   data() {
     return {
+      componentKey: 0,
       name: {prompt: 'your name', input: 'your name', edit: false, isValid: false},
       programs: {prompt: 'e.g undergraduate', input: 'e.g undergraduate', edit: false, isValid: false},
       course: {prompt: 'major or course', input: 'major or course', edit: false, isValid: false},
       country: {prompt: 'preferred city or country?', input: 'preferred city or country?', edit: false, isValid: false},
-      contact: {prompt: "phone or email", input: "phone or email", edit: false, isValid: false},
+      contact: {prompt: "type your phone number", input: "type your phone number", edit: false, isValid: false},
+      notificationMessage: "",
+      showValidateError: false,
+      isFormValid: true,
     }
   },
   methods: {
+    handleSubmit() {
+      this.validateForm()
+      if (this.isFormValid) {
+        console.log('send to email.js here')
+        this.showValidateError = false;
+        this.clearForm()
+        this.setNotification("Thanks! Chat soon")
+      } else {
+        this.setNotification("Please check that you've filled out everything")
+      }
+    },
     clearForm: function(){
-      // Clear form button is not working
+      this.componentKey += 1;
       this.name = {prompt: 'your name', input: 'your name', edit: false, isValid: false};
       this.programs = {prompt: 'e.g undergraduate', input: 'e.g undergraduate', edit: false, isValid: false};
       this.course = {prompt: 'major or course', input: 'major or course', edit: false, isValid: false};
       this.country = {prompt: 'preferred city or country?', input: 'preferred city or country?', edit: false, isValid: false};
-      this.contact = {prompt: "phone or email", input: "phone or email", edit: false, isValid: false};
+      this.contact = {prompt: "type your phone number", input: "type your phone number", edit: false, isValid: false};
+    },
+    validateForm: function() {
+      if (this.name.isValid && this.programs.isValid && this.course.isValid && this.country.isValid && this.contact.isValid) {
+        this.isFormValid = true
+        this.showValidateError = false
+      } else {
+        this.isFormValid = false
+        this.showValidateError = true
+      }
+    },
+    setNotification: function(message) {
+      this.notificationMessage = message
     }
   }
 }
@@ -132,6 +162,7 @@ export default {
         }
       }
       .clear-button {
+        margin-right: 10px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -147,6 +178,14 @@ export default {
           margin-right: 5px;
         }
       }
+    }
+    .notification{
+      padding-top: 30px;
+      flex-direction: row;
+      justify-content: center;
+      font-family: "Bw Modelica Light", serif;
+      font-size: 17px;
+      color: #4a4a4a;
     }
   }
 }
