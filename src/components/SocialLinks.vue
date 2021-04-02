@@ -44,7 +44,6 @@ export default {
 <style lang="scss" scoped>
 
 @media only screen and (min-width: 769px) {
-
   #SocialLinks {
     display: flex;
     flex-direction: row;
@@ -75,6 +74,10 @@ export default {
       }
     }
   }
+}
+
+@media only screen and (max-width: 768px) {
+  display: none;
 }
 
 </style>

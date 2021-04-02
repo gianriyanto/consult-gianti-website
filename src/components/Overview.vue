@@ -2,7 +2,7 @@
   <div id="Overview">
     <div class="overview-item">
       <span class="overview-number">
-        50
+        28
       </span>
       <span class="overview-description">
         <span class="description-text">
@@ -28,7 +28,7 @@
     </div>
     <div class="overview-item">
       <span class="overview-number">
-        80
+        100+
       </span>
       <span class="overview-description">
         <span class="description-text">
@@ -51,7 +51,6 @@ export default {
 <style lang="scss" scoped>
 
 @media only screen and (min-width: 769px) {
-
   #Overview {
     display: flex;
     flex-direction: column;
@@ -91,5 +90,48 @@ export default {
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  #Overview {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+
+    .overview-item {
+      margin: 0 auto;
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      align-items: center;
+
+      .overview-number {
+        font-family: 'Gilroy Bold', serif;
+        font-size: 42px;
+        word-spacing: 1.5px;
+        letter-spacing: -0.5px;
+        color: #282828;
+      }
+
+      .overview-description {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+
+        .description-text {
+          text-align: center;
+          font-family: 'Gilroy Regular', serif;
+          font-size: 18px;
+          word-spacing: 1.5px;
+          letter-spacing: -0.4px;
+          line-height: 1.3;
+          color: #282828;
+        }
+      }
+    }
+  }
+}
+
 
 </style>

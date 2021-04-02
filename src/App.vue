@@ -23,9 +23,15 @@ export default {
 
 #app {
   background-color: transparent;
-
   .app-wrapper{
 
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .app-wrapper{
+    width: 100%;
+    height: fit-content;
   }
 }
 

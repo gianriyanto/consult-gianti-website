@@ -75,7 +75,6 @@ export default {
 <style lang="scss" scoped>
 
 @media only screen and (min-width: 769px) {
-
   #Contact {
     display: flex;
     flex-direction: column;
@@ -178,6 +177,115 @@ export default {
         &:hover {
           opacity: 0.5;
         }
+
+        .icon {
+          color: black;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px){
+  #Contact {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    z-index: 1;
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 75vw;
+      padding-top: 80px;
+
+      .header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .pre-header-container {
+          font-family: 'Gilroy Bold', serif;
+          font-size: 40px;
+          word-spacing: 1.5px;
+          letter-spacing: -1.5px;
+          line-height: 1.2;
+          color: #282828;
+
+          .underline {
+            border-bottom: 2px solid currentColor;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 80%;
+        padding-top: 60px;
+        align-self: center;
+
+        .my-card-button {
+          width: 100%;
+          height: 45px;
+          align-self: center;
+          border: thin solid black;
+          background: rgb(28, 25, 25);
+          backdrop-filter: blur(20.0px);
+          -webkit-backdrop-filter: blur(20.0px);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+          border-radius: 30px;
+          margin-bottom: 20px;
+
+          .button-label {
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 16px;
+            margin: auto;
+            color: white;
+          }
+        }
+
+        .contact-button {
+          width: 100%;
+          height: 45px;
+          align-self: center;
+          border: thin solid black;
+          background: rgba(255, 255, 255, 0.2);
+          backdrop-filter: blur(20.0px);
+          -webkit-backdrop-filter: blur(20.0px);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+          border-radius: 30px;
+
+          .button-label {
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 16px;
+            margin: auto;
+            color: black;
+          }
+        }
+      }
+    }
+
+    .social-links-container{
+      padding-top: 30px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      height: 100px;
+      align-items: center;
+      width: 60%;
+
+      .link-container {
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        margin-right: 7px;
+        display: flex;
 
         .icon {
           color: black;

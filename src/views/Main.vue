@@ -1,12 +1,12 @@
 <template>
   <div id="Main">
     <TopNav/>
-    <blurry-background/>
-    <Landing/>
-    <GetStarted/>
-    <AboutMe/>
-    <Features/>
-    <Contact/>
+    <blurry-background id="BlurryBackground"/>
+    <Landing id="Landing"/>
+    <GetStarted id="GetStarted"/>
+    <AboutMe id="AboutMe"/>
+    <Features id="Features"/>
+    <Contact id="Contact"/>
   </div>
 </template>
 
@@ -35,9 +35,18 @@ export default {
 
 <style lang="scss" scoped>
 
-  #Main{
+@media only screen and (min-width: 769px) {
+  #Main {
     display: flex;
     flex-direction: column;
   }
+}
+
+@media only screen and (max-width: 768px) {
+  #Main{
+    width: 100%;
+    height: fit-content;
+  }
+}
 
 </style>

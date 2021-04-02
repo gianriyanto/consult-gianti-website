@@ -38,7 +38,6 @@ export default {
 <style lang="scss" scoped>
 
 @media only screen and (min-width: 769px) {
-
   #Landing{
     height: 100vh;
     width: 100vw;
@@ -85,7 +84,49 @@ export default {
       }
     }
   }
+}
 
+@media only screen and (max-width: 768px) {
+  #Landing{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    #TopBar{
+      display: none;
+    }
+
+    .content-wrapper{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 75vw;
+      align-self: center;
+
+      .header-wrapper{
+        display: flex;
+        padding-top: 130px;
+        flex-direction: row;
+
+        #LandingHeader{
+          width: 100%;
+        }
+      }
+
+      .footer-container{
+        width: 100%;
+
+        #SocialLinks {
+          margin-top: auto;
+          padding-bottom: 20px;
+        }
+        #Overview{
+          padding-top: 20px;
+        }
+      }
+    }
+  }
 }
 
 </style>

@@ -29,7 +29,6 @@ export default {
 <style lang="scss" scoped>
 
 @media only screen and (min-width: 769px) {
-
   #HowIWork {
     height: fit-content;
 
@@ -84,4 +83,61 @@ export default {
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  #HowIWork {
+    height: fit-content;
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      padding-top: 80px;
+      width: 70vw;
+
+      .header-container {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+
+        .pre-header-container {
+          display: flex;
+          flex-direction: row;
+
+          .dash {
+            width: 20px;
+            height: 1px;
+            background-color: #4f4f4f;
+            border: none;
+            margin: auto 10px auto 0;
+          }
+
+          .pre-header-text {
+            font-family: 'Bw Modelica Medium', serif;
+            font-size: 20px;
+            word-spacing: 1.5px;
+            letter-spacing: -0.4px;
+            line-height: 1.3;
+            color: #4f4f4f;
+          }
+        }
+
+        .header-text {
+          padding-top: 20px;
+          font-family: 'Gilroy Bold', serif;
+          font-size: 40px;
+          word-spacing: 1.8px;
+          letter-spacing: -1.3px;
+          line-height: 1.2;
+          color: #1a1a1a;
+        }
+      }
+
+      #Process {
+        padding-top: 50px;
+      }
+    }
+  }
+}
+
 </style>

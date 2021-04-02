@@ -7,10 +7,10 @@
       </span>
     </div>
     <div class="header-wrapper">
-      <span class="pre-header-container">
+      <span class="header-container">
         I'm Gianti.
       </span>
-      <span class="pre-header-container">
+      <span class="header-container">
         Your education counselor.
       </span>
     </div>
@@ -64,7 +64,6 @@ export default {
 <style lang="scss" scoped>
 
 @media only screen and (min-width: 769px) {
-
   #LandingHeader {
     display: flex;
     flex-direction: column;
@@ -97,7 +96,7 @@ export default {
       flex-direction: column;
       text-align: left;
 
-      .pre-header-container {
+      .header-container {
         font-family: 'Bw Modelica Bold', serif;
         font-size: 50px;
         word-spacing: 1.3px;
@@ -203,6 +202,88 @@ export default {
           font-size: 14px;
           margin: auto;
           color: black;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #LandingHeader {
+    display: flex;
+    flex-direction: column;
+
+    .header-container {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      margin: 0 auto;
+
+      .dash {
+        display: none;
+      }
+
+      .pre-header-container {
+        font-family: 'Bw Modelica Medium', serif;
+        font-size: 15px;
+        word-spacing: 1.5px;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+        color: #242424;
+      }
+    }
+
+    .header-wrapper {
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+
+      .header-container {
+        font-family: 'Bw Modelica Bold', serif;
+        font-size: 33px;
+        word-spacing: 1.3px;
+        letter-spacing: -0.7px;
+        line-height: 1.2;
+        color: #474747;
+      }
+    }
+
+    .subheader-container {
+      display: none;
+    }
+
+    .button-container {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      text-align: center;
+      height: fit-content;
+      width: 60%;
+
+      .normal-button {
+        display: none;
+      }
+
+      .floating-button {
+        display: none;
+      }
+
+      .get-started-button {
+        height: 43px;
+        width: 100%;
+        background-color: #242424;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+        border-radius: 30px;
+
+        .button-label {
+          font-family: "Gilroy SemiBold", serif;
+          font-size: 15px;
+          letter-spacing: 0.5px;
+          margin: auto;
+          color: white;
         }
       }
     }
