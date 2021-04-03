@@ -9,18 +9,18 @@
           </span>
         </span>
         <span class="header-text">
-          I bridge clients with the best education experience by transforming their talents and passion into a launch pad for professional success.
+          {{ header }}
         </span>
       </div>
       <div class="body-container">
         <span class="body-text">
-          With over 20 years creating a network of opportunities around the world and navigating through the education system, I look to solve one problem - simplifying your future.
+          {{ body[0] }}
         </span>
         <span class="body-text">
-          The first-steps to applications can be daunting, let alone the tedious amount of paperwork and processes. I designed a methodology and system to ensure your experience is seamless so that you can focus on what truly matters.
+          {{ body[1] }}
         </span>
         <span class="body-text">
-          You’ve got an incredible career ahead of you, my knowledge and expertise in learning ensures that every decision we make together is another step closer to your success.
+          {{ body[2] }}
         </span>
       </div>
       <img class="signature-image" src="@/assets/images/signature.svg" alt ="">
@@ -37,7 +37,17 @@ import HowIWork from "@/components/HowIWork";
 
 export default {
   name: "AboutMe",
-  components: {HowIWork}
+  components: {HowIWork},
+  data() {
+    return {
+      header: "I design personalised education blueprints as launch pad for your professional success.",
+      body: [
+        "With over 20 years creating a network of opportunities around the world and navigating through the education system, I look to solve one problem - simplifying your future.",
+        "The first-steps to applications can be daunting, let alone the tedious amount of paperwork and processes. I designed a methodology and system to ensure your experience is seamless so that you can focus on what truly matters.",
+        "You’ve got an incredible career ahead of you, my knowledge and expertise in learning ensures that every decision we make together is another step closer to your success."
+      ]
+    }
+  }
 }
 </script>
 

@@ -69,7 +69,7 @@ export default {
       transform: translate(75vw, 30vh);
       background-color: #7ce2ca;
       height: 400px;
-      width: 400px;
+      width: 550px;
       border-radius: 50%;
     }
 
@@ -79,7 +79,7 @@ export default {
       position: absolute;
       transform: translate(15vw, 40vh);
       background-color: #90d5f5;
-      height: 450px;
+      height: 550px;
       width: 450px;
       border-radius: 50%;
     }
@@ -89,7 +89,7 @@ export default {
       display: flex;
       position: absolute;
       transform: translate(-15vw, 65vh);
-      background-color: #ff804e;
+      background-color: #fcb679;
       height: 650px;
       width: 550px;
       border-radius: 50%;
@@ -122,7 +122,7 @@ export default {
       display: flex;
       position: absolute;
       transform: translate(75vw, 180vh);
-      background-color: #f6924e;
+      background-color: #fcac75;
       height: 400px;
       width: 400px;
       border-radius: 50%;
@@ -134,7 +134,7 @@ export default {
       position: absolute;
       transform: translate(-5vw, 210vh);
       background-color: #acfcdc;
-      height: 400px;
+      height: 500px;
       width: 400px;
       border-radius: 50%;
     }
@@ -221,9 +221,9 @@ export default {
       display: flex;
       position: absolute;
       transform: translate(60vw, 5vh);
-      background-color: #ff9c42;
-      height: 650px;
-      width: 650px;
+      background-color: #f8c869;
+      height: 550px;
+      width: 550px;
       border-radius: 50%;
     }
 
@@ -298,7 +298,7 @@ export default {
       display: flex;
       position: absolute;
       transform: translate(-15vw, 65vh);
-      background-color: #ff804e;
+      background-color: #fdc0a7;
       height: 650px;
       width: 550px;
       border-radius: 50%;
@@ -331,7 +331,7 @@ export default {
       display: flex;
       position: absolute;
       transform: translate(75vw, 180vh);
-      background-color: #f6924e;
+      background-color: #fcd48f;
       height: 400px;
       width: 400px;
       border-radius: 50%;
@@ -375,7 +375,7 @@ export default {
       display: flex;
       position: absolute;
       transform: translate(-10vw, 290vh);
-      background-color: #fda764;
+      background-color: #f8b47f;
       height: 650px;
       width: 500px;
       border-radius: 50%;
@@ -430,7 +430,7 @@ export default {
       display: flex;
       position: absolute;
       transform: translate(60vw, 5vh);
-      background-color: #ff9c42;
+      background-color: #fcd267;
       height: 650px;
       width: 650px;
       border-radius: 50%;

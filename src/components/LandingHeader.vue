@@ -17,7 +17,7 @@
     <div class="subheader-container"
          v-observe-visibility="animateElement">
       <span class="subheader-text">
-        I founded Aspectama to help architect personalised education blueprints for aspiring professionals like you.
+        I founded Aspectama to bridge aspiring professionals with an education experience that unlocks your talents and passion.
       </span>
     </div>
     <div class="button-container">
