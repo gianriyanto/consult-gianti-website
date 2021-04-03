@@ -109,7 +109,7 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #TopNav{
-    position: fixed;
+    position: absolute;
     width: 100vw;
     z-index: 10;
 
@@ -123,7 +123,7 @@ export default {
       width: 90vw;
 
       .logo-container{
-        height: 90%;
+        height: 95%;
         cursor: pointer;
         opacity: 1;
 
