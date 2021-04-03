@@ -109,7 +109,51 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #TopNav{
-    display: none;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+
+    .content-wrapper {
+      margin: 0 auto;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 40px;
+      width: 90vw;
+
+      .logo-container{
+        height: 90%;
+        cursor: pointer;
+        opacity: 1;
+
+        .image{
+          padding-top: 5px;
+          height: 100%;
+          width: auto;
+        }
+      }
+      .get-started-button{
+        display: none;
+      }
+      .contact-button {
+        align-self: center;
+        width: fit-content;
+        padding: 0 15px;
+        height: 30px;
+        border: thin solid #242424;
+        background-color: #242424;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
+        border-radius: 30px;
+
+        .button-label{
+          font-family: "Bw Modelica Medium", serif;
+          font-size: 10px;
+          margin: auto;
+          color: white;
+        }
+      }
+    }
   }
 }
 

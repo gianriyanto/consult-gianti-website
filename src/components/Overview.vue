@@ -108,7 +108,7 @@ export default {
 
       .overview-number {
         font-family: 'Gilroy Bold', serif;
-        font-size: 42px;
+        font-size: 36px;
         word-spacing: 1.5px;
         letter-spacing: -0.5px;
         color: #282828;
@@ -122,7 +122,7 @@ export default {
         .description-text {
           text-align: center;
           font-family: 'Gilroy Regular', serif;
-          font-size: 18px;
+          font-size: 15px;
           word-spacing: 1.5px;
           letter-spacing: -0.4px;
           line-height: 1.3;

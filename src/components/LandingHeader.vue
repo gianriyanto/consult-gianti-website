@@ -272,7 +272,7 @@ export default {
       }
 
       .get-started-button {
-        height: 43px;
+        height: 45px;
         width: 100%;
         background-color: #242424;
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
