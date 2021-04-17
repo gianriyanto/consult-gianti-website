@@ -16,6 +16,10 @@
        v-on:click="goToSite('https://goo.gl/maps/9iiTnMrh5BNJEuMT7')">
       <MapIcon size="1x" class="icon"></MapIcon>
     </a>
+    <a class="link-container"
+       v-on:click="goToSite('')">
+      <MailIcon size="1x" class="icon"></MailIcon>
+    </a>
   </div>
 </template>
 
@@ -24,6 +28,7 @@ import { InstagramIcon } from 'vue-feather-icons'
 import { FacebookIcon } from 'vue-feather-icons'
 import { GlobeIcon } from 'vue-feather-icons'
 import { MapIcon } from 'vue-feather-icons'
+import { MailIcon } from 'vue-feather-icons'
 
 export default {
   name: "SocialLinks",
@@ -31,7 +36,8 @@ export default {
     FacebookIcon,
     InstagramIcon,
     GlobeIcon,
-    MapIcon
+    MapIcon,
+    MailIcon
   },
   methods: {
     goToSite(url) {

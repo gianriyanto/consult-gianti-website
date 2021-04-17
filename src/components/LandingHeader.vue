@@ -24,7 +24,7 @@
       <button :class="buttonStyle">
         <font-awesome-icon class="whatsapp-icon" :icon="['fab', 'whatsapp']" v-on:click="goToSite('https://wa.me/+6281368681214')"/>
         <span class="button-label">
-          Say hi!
+          Whatsapp
         </span>
       </button>
       <button class="get-started-button">

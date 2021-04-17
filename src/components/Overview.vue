@@ -55,6 +55,7 @@ export default {
     display: flex;
     flex-direction: column;
     margin-left: auto;
+    margin-bottom: 10px;
     height: fit-content;
 
     .overview-item {
