@@ -23,7 +23,7 @@
           {{ body[2] }}
         </span>
       </div>
-      <img class="signature-image" src="@/assets/images/signature.svg" alt ="">
+      <img class="signature-image" src="@/assets/images/signature.png" alt ="">
       <div class="signature">
         <img/>
       </div>
@@ -115,7 +115,8 @@ export default {
         }
       }
       .signature-image{
-        width: 40%;
+        padding-top: 20px;
+        width: 27%;
         height: auto;
       }
     }
@@ -183,7 +184,7 @@ export default {
         }
       }
       .signature-image{
-        width: 60%;
+        width: 35%;
         height: auto;
       }
     }
