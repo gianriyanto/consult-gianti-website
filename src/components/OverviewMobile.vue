@@ -110,6 +110,7 @@ export default {
 
       .image{
         width: 110px;
+        height: auto;
       }
     }
 

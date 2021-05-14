@@ -59,8 +59,9 @@ export default {
       align-self: center;
 
       .header-wrapper{
+        height: 65%;
         display: flex;
-        padding-top: 18%;
+        padding-top: 10%;
         flex-direction: row;
         justify-content: space-between;
 
@@ -73,7 +74,7 @@ export default {
       }
 
       .footer-container{
-        flex-grow: 1;
+        height: 35%;
         display: flex;
         flex-direction: row;
 

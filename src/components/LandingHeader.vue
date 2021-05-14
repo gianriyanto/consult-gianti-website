@@ -223,6 +223,7 @@ export default {
 
       .image{
         width: 85%;
+        height: auto;
       }
     }
   }
