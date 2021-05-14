@@ -109,6 +109,7 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #TopNav{
+    display: none;
     position: absolute;
     width: 100vw;
     z-index: 10;

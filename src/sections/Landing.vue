@@ -4,6 +4,7 @@
     <div class="content-wrapper">
       <div class="header-wrapper">
         <landing-header id="LandingHeader"/>
+        <overview-mobile id="OverviewMobile"/>
       </div>
       <div class="footer-container">
         <SocialLinks id="SocialLinks"/>
@@ -18,10 +19,12 @@ import TopBar from "@/components/TopBar";
 import Overview from "@/components/Overview";
 import SocialLinks from "@/components/SocialLinks";
 import LandingHeader from "@/components/LandingHeader";
+import OverviewMobile from "@/components/OverviewMobile";
 
 export default {
   name: "Landing",
   components: {
+    OverviewMobile,
     LandingHeader,
     SocialLinks,
     Overview,
@@ -63,6 +66,9 @@ export default {
 
         #LandingHeader{
           width: 60%;
+        }
+        #OverviewMobile{
+          display: none;
         }
       }
 
@@ -106,8 +112,8 @@ export default {
 
       .header-wrapper{
         display: flex;
-        padding-top: 130px;
-        flex-direction: row;
+        padding-top: 120px;
+        flex-direction: column;
 
         #LandingHeader{
           width: 100%;

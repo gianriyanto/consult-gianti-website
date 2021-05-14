@@ -229,7 +229,7 @@ export default {
         word-spacing: 1.5px;
         letter-spacing: -0.5px;
         line-height: 1.2;
-        color: #242424;
+        color: #282828;
       }
     }
 
@@ -246,7 +246,7 @@ export default {
         word-spacing: 1.3px;
         letter-spacing: -0.7px;
         line-height: 1.35;
-        color: #474747;
+        color: #282828;
       }
     }
 
@@ -255,8 +255,8 @@ export default {
     }
 
     .button-container {
+      display: none;
       padding-top: 20px;
-      display: flex;
       flex-direction: column;
       margin: 0 auto;
       text-align: center;
@@ -276,11 +276,11 @@ export default {
         width: 100%;
         background-color: #242424;
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
-        border-radius: 30px;
+        border-radius: 10px;
 
         .button-label {
-          font-family: "Gilroy SemiBold", serif;
-          font-size: 15px;
+          font-family: "Gilroy Regular", serif;
+          font-size: 13px;
           letter-spacing: 0.5px;
           margin: auto;
           color: white;

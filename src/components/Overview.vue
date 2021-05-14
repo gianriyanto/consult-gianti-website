@@ -94,7 +94,7 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #Overview {
-    display: flex;
+    display: none;
     flex-direction: column;
     height: fit-content;
     width: 100%;
