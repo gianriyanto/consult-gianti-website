@@ -138,7 +138,7 @@ export default {
         display: flex;
         flex-direction: row;
         text-align: left;
-        height: 48px;
+        height: 46px;
 
         .normal-button {
           z-index: 2;
@@ -149,7 +149,7 @@ export default {
           align-items: center;
           justify-content: center;
           padding: 0 23px;
-          background-color: #404040;
+          background-color: #242424;
           border: thin solid black;
           border-radius: 30px;
           width: 160px;
