@@ -75,7 +75,7 @@ export default {
 
     .content-wrapper{
       margin-top: auto;
-      width: 87%;
+      width: 80%;
       display: flex;
       flex-direction: column;
 
@@ -222,7 +222,7 @@ export default {
       width: 50%;
 
       .image{
-        width: 100%;
+        width: 85%;
       }
     }
   }
