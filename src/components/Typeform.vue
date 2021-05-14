@@ -50,6 +50,7 @@
 <script>
 import InlineInput from "@/components/InlineInput";
 import { SendIcon } from 'vue-feather-icons'
+import emailjs from 'emailjs-com';
 
 export default {
   name: "Typeform",
@@ -72,6 +73,17 @@ export default {
       this.validateForm()
       if (this.isFormValid) {
         console.log('send to email.js here')
+        emailjs.send(
+            "service_6v0gp13",
+            "template_ys6wc7t",
+            {
+              name: this.name.input,
+              program: this.programs,
+              course: this.course.input,
+              country: this.country.input,
+              contact: this.contact.input
+            }
+        );
         this.showValidateError = false;
         this.clearForm()
         this.setNotification("Thanks! Chat soon")
