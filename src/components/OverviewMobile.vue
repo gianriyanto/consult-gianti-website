@@ -3,6 +3,19 @@
     <div class="overview">
       <div class="overview-item">
         <span class="overview-number">
+          100+
+        </span>
+        <span class="overview-description">
+          <span class="description-text">
+            Client
+          </span>
+          <span class="description-text">
+            partnerships
+          </span>
+        </span>
+      </div>
+      <div class="overview-item">
+        <span class="overview-number">
           28
         </span>
           <span class="overview-description">
@@ -14,28 +27,16 @@
           </span>
         </span>
       </div>
-      <div class="overview-item">
-        <span class="overview-number">
-          100+
-        </span>
-          <span class="overview-description">
-          <span class="description-text">
-            Client
-          </span>
-          <span class="description-text">
-            partnerships
-          </span>
-        </span>
-      </div>
     </div>
-    <div class="portrait">
+    <div class="portrait-container">
+      <img class="image" src="@/assets/images/gianti_portrait.png">
     </div>
     <span class="header-text">
       Ready to build your future? I'd love to hear from you!
     </span>
     <button class="whatsapp-button">
       <span class="button-label">
-          Whatsapp Me
+          WhatsApp Me
         </span>
     </button>
     <button class="get-started-button">
@@ -93,9 +94,9 @@ export default {
           .description-text {
             text-align: center;
             font-family: 'Gilroy Regular', serif;
-            font-size: 15px;
+            font-size: 12px;
             word-spacing: 1.5px;
-            letter-spacing: -0.4px;
+            letter-spacing: -0.2px;
             line-height: 1.3;
             color: #282828;
           }
@@ -103,18 +104,17 @@ export default {
       }
     }
 
-    .portrait{
+    .portrait-container{
       display: flex;
-      margin: 35px auto 0 auto;
-      border: #4a4a4a;
-      border-radius: 50%;
-      background-color: lightsteelblue;
-      width: 70px;
-      height: 70px;
+      margin: 25px auto 0 auto;
+
+      .image{
+        width: 110px;
+      }
     }
 
     .header-text{
-      margin: 15% auto 0 auto;
+      margin: 10% auto 0 auto;
       font-family: "Bw Modelica Regular", serif;
       font-size: 13px;
       color: black;

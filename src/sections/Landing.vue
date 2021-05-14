@@ -60,12 +60,12 @@ export default {
 
       .header-wrapper{
         display: flex;
-        padding-top: 23%;
+        padding-top: 18%;
         flex-direction: row;
         justify-content: space-between;
 
         #LandingHeader{
-          width: 60%;
+          width: 100%;
         }
         #OverviewMobile{
           display: none;
@@ -79,7 +79,7 @@ export default {
 
         #SocialLinks {
           margin-top: auto;
-          padding-bottom: 20px;
+          padding-bottom: 30px;
         }
         #Overview{
           margin-top: auto;

@@ -15,19 +15,6 @@
     </div>
     <div class="overview-item">
       <span class="overview-number">
-        90
-      </span>
-      <span class="overview-description">
-        <span class="description-text">
-          Universities
-        </span>
-        <span class="description-text">
-          that clients enrolled
-        </span>
-      </span>
-    </div>
-    <div class="overview-item">
-      <span class="overview-number">
         100+
       </span>
       <span class="overview-description">
@@ -109,7 +96,7 @@ export default {
 
       .overview-number {
         font-family: 'Gilroy Bold', serif;
-        font-size: 36px;
+        font-size: 30px;
         word-spacing: 1.5px;
         letter-spacing: -0.5px;
         color: #282828;
