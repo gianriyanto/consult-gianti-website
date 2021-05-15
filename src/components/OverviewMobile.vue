@@ -105,12 +105,16 @@ export default {
     }
 
     .portrait-container{
+      align-self: center;
+      padding-top: 15px;
       display: flex;
-      margin: 25px auto 0 auto;
+      height: 20%;
+      width: 80%;
 
       .image{
-        width: 110px;
+        width: 120px;
         height: auto;
+        margin: 0 auto;
       }
     }
 
