@@ -75,7 +75,7 @@ export default {
 
     .content-wrapper{
       margin-top: auto;
-      width: 80%;
+      width: 70%;
       display: flex;
       flex-direction: column;
 
@@ -219,10 +219,10 @@ export default {
     }
     .portrait-container{
       display: flex;
-      width: 50%;
+      width: 45%;
 
       .image{
-        width: 85%;
+        width: 410px;
         height: auto;
       }
     }

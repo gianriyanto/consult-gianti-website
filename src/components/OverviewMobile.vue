@@ -113,7 +113,7 @@ export default {
 
       .image{
         width: 120px;
-        height: auto;
+        height: 120px;
         margin: 0 auto;
       }
     }
