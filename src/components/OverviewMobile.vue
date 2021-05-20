@@ -131,11 +131,11 @@ export default {
     .whatsapp-button {
       border: thin solid black;
       height: 45px;
-      width: 70%;
+      width: 75%;
       margin: 25px auto 0 auto;
       background-color: transparent;
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
-      border-radius: 10px;
+      border-radius: 30px;
 
       .button-label {
         font-family: "Gilroy SemiBold", serif;
@@ -149,11 +149,11 @@ export default {
     .get-started-button {
       border: thin solid black;
       height: 45px;
-      width: 70%;
+      width: 75%;
       margin: 20px auto 0 auto;
       background-color: #242424;
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
-      border-radius: 10px;
+      border-radius: 30px;
 
       .button-label {
         font-family: "Gilroy Regular", serif;

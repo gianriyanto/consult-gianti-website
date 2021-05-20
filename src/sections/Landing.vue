@@ -113,7 +113,7 @@ export default {
 
       .header-wrapper{
         display: flex;
-        padding-top: 90px;
+        padding-top: 80px;
         flex-direction: column;
 
         #LandingHeader{
