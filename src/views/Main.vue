@@ -6,6 +6,7 @@
     <GetStarted id="GetStarted"/>
     <AboutMe id="AboutMe"/>
     <Features id="Features"/>
+    <Testimony id="Testimony"/>
     <Contact id="Contact"/>
   </div>
 </template>
@@ -18,10 +19,12 @@ import Features from "@/sections/Features";
 import Contact from "@/sections/Contact";
 import AboutMe from "@/sections/AboutMe";
 import BlurryBackground from "@/background/BlurryBackground";
+import Testimony from "@/sections/Testimony";
 
 export default {
   name: "Main",
   components: {
+    Testimony,
     BlurryBackground,
     AboutMe,
     Contact,

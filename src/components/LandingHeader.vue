@@ -222,8 +222,9 @@ export default {
       width: 45%;
 
       .image{
-        width: 410px;
-        height: auto;
+        margin: auto;
+        min-width: 400px;
+        max-height: 400px;
       }
     }
   }
