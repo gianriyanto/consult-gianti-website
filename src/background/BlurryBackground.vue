@@ -244,7 +244,7 @@ export default {
   .canvas {
     display: flex;
     position: absolute;
-    height: 810vh;
+    height: 870vh;
     width: 100vw;
     z-index: -1;
     overflow-x: hidden;
@@ -407,8 +407,8 @@ export default {
       z-index: -2;
       display: flex;
       position: absolute;
-      transform: translate(50vw, 580vh);
-      background-color: #9fffcd;
+      transform: translate(30vw, 580vh);
+      background-color: #84e7b5;
       height: 1000px;
       width: 500px;
       border-radius: 50%;
