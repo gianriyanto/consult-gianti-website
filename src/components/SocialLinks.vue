@@ -17,7 +17,7 @@
       <MapIcon size="1x" class="icon"></MapIcon>
     </a>
     <a class="link-container"
-       v-on:click="goToSite('')">
+       v-on:click="goToSite('gianti@aspectama.co.id')">
       <MailIcon size="1x" class="icon"></MailIcon>
     </a>
   </div>

@@ -74,8 +74,8 @@ export default {
       if (this.isFormValid) {
         console.log('send to email.js here')
         emailjs.send(
-            "service_6v0gp13",
-            "template_ys6wc7t",
+            "service_qcv8e2k",
+            "template_cu31zld",
             {
               name: this.name.input,
               program: this.programs,
