@@ -18,7 +18,6 @@ Vue.use(VueParticles)
 library.add(faInstagram, faFacebook, faWhatsapp);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
-// TODO: add EmailJS id here
 init("user_5lb8eHv64C9LhhI5H6oMb");
 
 Vue.directive("observe-visibility", ObserveVisibility);

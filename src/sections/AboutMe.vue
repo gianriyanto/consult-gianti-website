@@ -40,7 +40,7 @@ export default {
   components: {HowIWork},
   data() {
     return {
-      header: "I build personalised education blueprints to kick start your professional career.",
+      header: "I build personalised education blueprints to kkick start your professional career.",
       body: [
         "With over 20 years creating a network of opportunities around the world and navigating through the education system, I look to solve one problem - simplifying your future.",
         "The first-steps to applications can be daunting, let alone the tedious amount of paperwork and processes. I designed a methodology and system to ensure your experience is seamless so that you can focus on what truly matters.",

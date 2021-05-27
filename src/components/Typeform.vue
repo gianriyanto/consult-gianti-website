@@ -72,7 +72,6 @@ export default {
     handleSubmit() {
       this.validateForm()
       if (this.isFormValid) {
-        console.log('send to email.js here')
         emailjs.send(
             "service_qcv8e2k",
             "template_cu31zld",
