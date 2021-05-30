@@ -69,6 +69,11 @@ export default {
       window.open(url, '_blank');
     }
   },
+  data() {
+    return {
+      publicPath: process.env.BASE_URL
+    }
+  }
 }
 </script>
 
