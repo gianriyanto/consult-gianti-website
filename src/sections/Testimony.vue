@@ -43,49 +43,49 @@ export default {
           university: 'Illinois Institute of Technology',
           header: 'Built my future from the very start.',
           message: "Aspectama’s service has genuinely help built my future from the very start. The always available of its counsellor assisted me in finding the most suited university, from the hassle of paperwork, visa, until my readiness to depart.",
-          imageURL: ""
+          imageURL: "khairifa.jpeg"
         },
         {
           client: 'Noah Ampulembang',
           university: 'Whatcom Community College',
           header: 'A great help during my time of indecisiveness.',
           message: "The counsellor did most of the heavy lifting in terms of managing the documents and requirements to be able to study abroad. They were a great help during my time of indecisiveness, helping me narrow the university & major options to best suit my needs.",
-          imageURL: ""
+          imageURL: "noah.jpeg"
         },
         {
           client: 'Ryan Djunaedi',
           university: 'Caésar Ritz College',
           header: 'Always have your best interest at heart.',
           message: "Having Aspectama’s counsellor by my side is like having a second mother. The counsellor will never forget you and will push you to aim higher. Most importantly, the counsellor will always have your best interest at heart.",
-          imageURL: ""
+          imageURL: "ryan.jpeg"
         },
         {
           client: 'Nathania Soetanto ',
           university: 'Southern Cross University',
           header: "Admitted to my dream university",
           message: "I was admitted to my dream university in Australia. From providing me an English tutor to achieve high TOEFL score, applying to universities, until I finally settled pursuing my Bachelor degree with good scholarship awarded to meet my education budget.",
-          imageURL: ""
+          imageURL: "nathania.jpeg"
         },
         {
           client: 'Novella Alvina',
           university: 'Durham University',
           header: 'Professional and caring describes her best.',
           message: "Chen's professionalism in working inspires me to no end. She provides unlimited support and motivation for me to become the best version of myself. Professional and caring describes her best in my eyes.",
-          imageURL: ""
+          imageURL: "novella.jpeg"
         },
         {
           client: 'Fajrul Yusoff',
           university: 'Westminster University',
           header: 'Best service.',
           message: "Being in Malaysia didn’t stop Aspectama from giving their best service. From failing my high school, the counsellors guided me all the way until I was given a chance to correct my youth mistakes in the past, until I am able to pursue my degree in the United Kingdom.",
-          imageURL: ""
+          imageURL: "fajrul.jpeg"
         },
         {
           client: 'Benedictus Brian Prasetya',
           university: 'Gilon Institute of Higher Education',
           header: 'The solution to my problem',
           message: "Aspectama found the solution to my problem. I always wanted to study and gain work experience overseas. They gave some valuable insights to help navigate through my unique situation. They designed a path for my future career with their dedicated assistance from scratch, all hassle free.",
-          imageURL: ""
+          imageURL: "benedictus.jpeg"
         }
       ]
     }

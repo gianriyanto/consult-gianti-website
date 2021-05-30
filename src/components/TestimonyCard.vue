@@ -9,7 +9,7 @@
       </span>
     </div>
     <div class="client-container">
-<!--      <img class="image" :src="require(`@/assets/clients/${ testimony.imageURL }`)" alt=""/>-->
+      <img class="image" :src="require(`@/assets/clients/${ testimony.imageURL }`)" alt=""/>
       <span class="client">
         <span class="name">
           {{ testimony.client }}
