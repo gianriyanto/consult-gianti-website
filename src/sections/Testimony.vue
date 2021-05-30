@@ -70,7 +70,7 @@ export default {
           client: 'Novella Alvina',
           university: 'Durham University',
           header: 'Professional and caring describes her best.',
-          message: "Chen's professionalism in working inspires me to no end. She provides unlimited support and motivation for me to become the best version of myself. Professional and caring describes her best in my eyes.",
+          message: "Aspectama's professionalism in working inspires me to no end. She provides unlimited support and motivation for me to become the best version of myself. Professional and caring describes her best in my eyes.",
           imageURL: "novella.jpeg"
         },
         {

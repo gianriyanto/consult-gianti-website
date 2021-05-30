@@ -1,7 +1,7 @@
 <template>
   <div id="SocialLinks">
     <a class="link-container"
-       v-on:click="goToSite('http://aspectamaalsut.co.id')">
+       v-on:click="goToSite('http://aspectamaa.co.id')">
       <globe-icon size="1x" class="icon"></globe-icon>
     </a>
     <a class="link-container"
