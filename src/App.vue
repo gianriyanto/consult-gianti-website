@@ -52,8 +52,9 @@ button{
 }
 
 a {
-  color: transparent;
+  color: white;
   text-decoration: none;
+
   a:visited {
     text-decoration: none;
     color: transparent;

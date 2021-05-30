@@ -17,7 +17,7 @@
       <div class="button-container">
         <button class="my-card-button">
           <span class="button-label">
-            Take my card
+            <a class="link-text" :href="`${publicPath}MyNameCard.png`" target="_blank"> Take my card </a>
           </span>
         </button>
         <button class="contact-button">

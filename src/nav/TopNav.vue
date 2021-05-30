@@ -9,7 +9,7 @@
       </span>
       <button class="contact-button">
         <span class="button-label">
-          Take my card
+          <a class="link-text" :href="`${publicPath}MyNameCard.png`" target="_blank"> Take my card </a>
         </span>
       </button>
     </div>
@@ -18,7 +18,12 @@
 
 <script>
 export default {
-  name: "TopNav"
+  name: "TopNav",
+  data() {
+    return {
+      publicPath: process.env.BASE_URL
+    }
+  }
 }
 </script>
 
