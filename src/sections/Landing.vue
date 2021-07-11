@@ -125,8 +125,7 @@ export default {
         width: 100%;
 
         #SocialLinks {
-          margin-top: auto;
-          padding-bottom: 20px;
+          display: none;
         }
         #Overview{
           padding-top: 20px;
