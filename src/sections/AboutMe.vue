@@ -40,11 +40,11 @@ export default {
   components: {HowIWork},
   data() {
     return {
-      header: "I build personalised education blueprints to kkick start your professional career.",
+      header: "I build personalised education blueprints to kick start your professional career.",
       body: [
         "With over 20 years creating a network of opportunities around the world and navigating through the education system, I look to solve one problem - simplifying your future.",
-        "The first-steps to applications can be daunting, let alone the tedious amount of paperwork and processes. I designed a methodology and system to ensure your experience is seamless so that you can focus on what truly matters.",
-        "You’ve got an incredible career ahead of you, my knowledge and expertise in learning ensures that every decision we make together is another step closer to your success."
+        "The first-steps to university applications can be daunting, let alone the tedious amount of paperwork and processes in place. I designed a system to ensure your experience is seamless so that you can focus on what truly matters.",
+        "You’ve got an incredible career ahead of you, my knowledge and expertise in learning ensures that every decision we make together is another step closer to your professional success."
       ]
     }
   }
